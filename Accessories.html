@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/table.css"> -->
+    <script src="js/fcc.js"></script>
+    <title>Actuator</title>
+    <style>
+        label {
+            font-size: 12px;
+        }
+
+        input {
+            height: 70%;
+            font-size: 12px;
+
+        }
+
+        select {
+            height: 70%;
+            font-size: 12px;
+            width: 100%;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        .btn {
+            font-size: 14px;
+            margin-left: 160%;
+            margin-top: 30%;
+            width: 30%;
+
+        }
+
+        /* accesories page------------------ table icons */
+        .tableicons {
+            width: 170%;
+        }
+
+        .tableicons2 {
+            width: 140%;
+        }
+
+        .acess_icons {
+            color: black;
+        }
+
+        /* Custom styles to reduce tooltip size */
+        .tooltip-inner {
+            font-size: 12px;
+            /* Adjust the font size as needed */
+            max-width: 100px;
+            /* Set a maximum width if necessary */
+            /* delay: { "show": 500, "hide": 100 } */
+        }
+    </style>
+    <!-- Extrenal css file  
+/* ACtuator Sizing */
+.actuator{
+    margin-top: 30px;
+
+}-->
+
+</head>
+
+<body>
+    <div class="container-fulid">
+        <div class="row">
+            <div class="col-2">
+                <div class="sidenav">
+                    <img src="photo/FCC _new.png" alt="fcc" style="width: 90%; margin-top: 10px;">
+                    <ul class="nav flex-column vh-100">
+                        <!-- <li class="nav-item mt-4">
+                            <p><a class="nav-link" href="#">Dashboard</a></p>
+                        </li> -->
+                        <li class="nav-item mt-4" style="margin-top: 0;">
+                            <p><a class="nav-link" href="Dash.html"><i class="fa-solid fa-house pr-2"
+                                        style="color: white;"></i>
+                                    Dashboard</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="projectdetails.html"><i class="fa-solid fa-circle-info pr-2"
+                                        style="color: white;"></i>Project Details</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="valvedata.html"><img src="photo/Valve Data.png" alt="valvedata"
+                                        style="width: 20px; border-radius :10px;">
+                                    Valve Data</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p>
+                                <a class="nav-link" href="valvesizing.html"><img src="photo/Valve Sizing.png"
+                                        alt="valve" style="width: 20px; border-radius: 10px;"> Valve Sizing</a>
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Actuatorsizing.html"><img src="photo/Actuator Icon.png"
+                                        alt="valve" style="width: 10%; border-radius: 10px;"> Actuator Sizing</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Accessories.html"><img src="photo/Accessories.png" alt="valve"
+                                        style="width: 10%; border-radius: 10px;"> Accessories, Order Processing</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Itemnotes.html"><img src="photo/Item Notes.png" alt="valve"
+                                        style="width: 10%; border-radius: 10px;"> Item Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Projectnotes.html"><img src="photo/Project Notes.png" alt="valve"
+                                        style="width: 10%; border-radius: 10px;"> Project Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Viewdata.html"><img src="photo/View Data.png" alt="valve"
+                                        style="width: 10%; border-radius: 10px;"> View Data</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#"> <i class="fa-solid fa-users" style="color: white;"></i>
+                                    Customer Master</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#"><i class="fa-solid fa-arrow-right-from-bracket"
+                                        style="color: white;"></i> Logout</a></p>
+                        </li>
+                        <li class="nav-item" style="margin-top: 10px;">
+                            <p><a class="nav-link" href="#"> <i class="fa-solid fa-circle-user pr-2"
+                                        style="color: white;"></i> Suraj</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="topicons">
+                            <div class="row" style="margin-left: 3px;">
+                                <div class="icon">
+                                    <i class="fa-solid fa-backward-step" data-toggle="tooltip" title="first"></i>
+                                    <i class="fa-solid fa-angle-left ml-3" data-toggle="tooltip" title="Previous"></i>
+                                    <input type="text" class="form-control-sm-sm ml-3" name="name"
+                                        style="height: 26px;" />
+                                    <i class="fa-solid fa-angle-right ml-3" data-toggle="tooltip" title="next"></i>
+                                    <i class="fa-solid fa-forward-step ml-3" data-toggle="tooltip" title="last"></i>
+                                    <i class="fa-solid fa-folder-open ml-3" data-toggle="tooltip" title="file"></i>
+                                    <i class="fa-solid fa-floppy-disk ml-3 fa-lg" data-toggle="tooltip"
+                                        title="save"></i>
+                                    <i class="fa-solid fa-sliders fa-1x ml-3" data-toggle="tooltip"
+                                        title="Preference"></i>
+                                    <i class="fa-solid fa-question ml-3" data-toggle="tooltip" title="help"></i>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6 shadow mt-4 p-1" style="height: 380px;">
+                                        <h5 class="ml-2"><b>Accessories</b></h5>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-5 ml-2">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Positioner Mfg</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select id="" class="tableicons form-control-sm-sm">
+                                                            <option>Tissin</option>
+                                                            <option>Neles</option>
+                                                            <option>Fisher</option>
+                                                        </select>
+
+                                                    </div>
+                                                    <div class="col-2 ">
+                                                        <!-- <button type="button" class=" btn-outline-danger btn-xs" style="border-radius: 50%;">Po</button> -->
+                                                        <!-- <i class="fa-solid fa-share"></i> -->
+                                                        <!-- <i class="fa-solid fa-arrow-down fa-rotate-270"></i> -->
+                                                        <!-- <i class="fa-solid fa-turn-down fa-rotate-270"></i> -->
+                                                        <a href="Positioner(accessories).html">
+                                                            <i class="acess_icons fa-regular fa-circle-right ml-4"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Positioner"></i>
+                                                        </a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Positioner Model</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select id="" class=" tableicons form-control-sm-sm">
+                                                            <option>TS700R</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- <button type="button" class="btn-danger btn-xs" style="border-radius: 50%;">po</button> -->
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Signal Action</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select id="" class="tableicons form-control-sm-sm">
+                                                            <option>Double</option>
+                                                            <option>Single</option>
+                                                            <option>Reverse</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- <button type="button" class="btn-outline-danger btn-xs">Po</button> -->
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>AFR Make/Model</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select id="" class="tableicons form-control-sm-sm">
+                                                            <option>SHAVO/11-4</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <a href="Afr(accessories).html">
+                                                            <i class=" acess_icons  fa-regular fa-circle-right ml-4"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="AFR"></i>
+
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Position Transmitter</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input type="text" class="tableicons form-control-sm-sm">
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <!-- <button type="button" class=" btn-danger btn-xs" style="border-radius: 8px;">Po</button> -->
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Limit Switch</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select id="" class=" tableicons form-control-sm-sm">
+                                                            <option>TVL-E20GLMM</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <a href="limitswitch(accessories).html">
+                                                            <i class=" acess_icons fa-regular fa-circle-right ml-4"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Limit Switch"></i>
+
+                                                        </a>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Proximity Switch</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input type="text" class=" tableicons form-control-sm-sm">
+                                                    </div>
+                                                    <div class="col-2">
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Boosters</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select id="" class=" tableicons form-control-sm-sm">
+                                                            <option>I-BP1A</option>
+                                                            <option>W20359</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <i class=" acess_icons fa-regular fa-circle-right ml-4"
+                                                            data-toggle="tooltip" data-placement="top"
+                                                            title="Boosters"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Pilot Valves</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input type="text" class="tableicons form-control-sm-sm">
+                                                    </div>
+                                                    <div class="col2">
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Air Lock Relay</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input type="text" class="tableicons form-control-sm-sm">
+                                                    </div>
+                                                    <div class="col-2">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6 ml-4"> <!--Width 80%ttttttttttttttttttt-->
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>I/P Converter Make</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input type="text" class="tableicons2 form-control-sm-sm">
+                                                    </div>
+                                                    <div class="col-2">
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>I/P Converter Model</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input type="text" class="tableicons2 form-control-sm-sm">
+                                                    </div>
+                                                    <div class="col-2">
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Solenoid Valve Make</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select id="" class=" tableicons2 form-control-sm-sm">
+                                                            <option>ASCO</option>
+                                                            <option>Rotex</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-2">
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Solenoid Valve Model</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select id="" class="tableicons2 form-control-sm-sm">
+                                                            <option></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <a href="Solenoid(accessories).html">
+                                                            <i class=" acess_icons fa-regular fa-circle-right ml-3 "
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Solenoid Table"></i>
+
+                                                        </a>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Solenoid Action</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select id="" class="tableicons2 form-control-sm-sm">
+                                                            <option></option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-2">
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Volume Tank</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input type="text" class="tableicons2 form-control-sm-sm">
+                                                    </div>
+                                                    <div class="col-2">
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>IP Converter</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input type="text" class="tableicons2 form-control-sm-sm">
+                                                    </div>
+                                                    <div class="col-2">
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Air Receiver</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input type="text" class="tableicons2 form-control-sm-sm">
+                                                    </div>
+                                                    <div class="col-2">
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Tubing</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input type="text" class="tableicons2 form-control-sm-sm">
+                                                    </div>
+                                                    <div class="col-2">
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label>Fittings</label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input type="text" class="tableicons2 form-control-sm-sm">
+                                                    </div>
+                                                    <div class="col-2">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="btn mt-4">
+                                            <div class="row">
+                                                <button type="button" class="btn btn-info">Positioner</button>
+                                                <button type="button" class="btn ml-3"
+                                                    style="background-color: #04AA6D; color: white;">AFR</button>
+                                            </div>
+                                            <div class="row mt-2">
+                                                <button type="button" class="btn btn-info">Limit Switch</button>
+                                                <button type="button" class="btn ml-3"
+                                                    style="background-color: #04AA6D; color: white;">Solenoid</button>
+                                            </div>
+                                        </div> -->
+                                        <button type="button" class="btn btn-info ">Save Data</button>
+
+                                    </div>
+
+                                    <!-- <div class="col-3 mt-4 ml-5 shadow" style="padding: 15px; padding-right: 35px;">
+                                        <h5><b>Special Processing</b></h5>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Cleaning</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Certification</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Paint Finish</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Paint Certs</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Special SP1</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Special SP2</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Special SP3</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <h5><b>Inspection & Testing</b></h5>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>RM Inspection</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Hydro Test</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Final Inspection</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Painting Inspection</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Packing Inspection</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Validation Test VT1</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label>Validation Test VT2</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control-sm-sm" style="width: 85%;">
+                                            </div>
+                                        </div>
+                                     
+                                    </div> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
