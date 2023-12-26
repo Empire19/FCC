@@ -18,8 +18,12 @@
 	<style>
 		label {
 			font-size: 12px;
+			color: black;
 		}
-
+		h4
+		{
+			color: black;
+		}
 		input {
 			height: 70%;
 			font-size: 12px;
@@ -28,10 +32,17 @@
 		select {
 			height: 70%;
 			font-size: 12px;
+			background-color: white;
+			border: 1px solid #333;
 		}
 
 		h4 {
 			font-size: 20px;
+		}
+		.shadow
+		{
+			background-color: white;
+			color: white
 		}
 	</style>
 </head>
@@ -127,177 +138,148 @@
 
 						<div class="valvedatadetails">
 							<!--# BOX  IDEN SELECTION MATERIAL-->
-							<div class="row mt-5">
+							<div class="row mt-4">
 
 								<!-- VALVE IDENTIFICATION-->
+								
 								<div class="col-3">
-									<!-- <div class="row">
-                                        <div class="col-5">
-                                            <label for="Design Standard" style="margin-left: 12%;">Design Standard</label>
-                                        </div>
-                                        <div class="col-6">
-                                            <select class="form-control-sm-sm" style="width: 110%; margin-right: 2%; margin-left: 10%;">
-												<option value="asme">ASME</option>
-												<option value="api">API</option>
-											</select>
-                                        </div>
-                                    </div> -->
-									<div class="valveidentify shadow p-3 mt-3 " style="height: 95%; width: 105%;">
-										<h4><b>Valve Identification</b></h4>
-										<hr>
-										<div class="row mt-2">
-											<div class="col-5">
-												<label for="tag">Tag No</label>
-											</div>
-											<div class="col-7">
-												<input type="text" class="" name="tag"
-													style=" height:25px; width: 100%; ">
-											</div>
-										</div>
-										<div class="row  mt-2">
-											<div class="col-5">
-												<label for="quality">Quantity </label>
-											</div>
-											<div class="col-7">
-												<input type="text" class="" name="quality"
-													style=" height:25px; width: 100%; ">
-											</div>
-										</div>
-										<div class="row  mt-2">
-											<div class="col-5">
-												<label for="Application">Application</label>
-											</div>
-											<div class="col-7">
-												<input type="text" class="" name="Application"
-													style="height: 25px; width: 100%;">
+									<div class="row">
+										<div class="col-12">
+											<div class="valve identification p-3 shadow" style="width: 105%;">
+												<h4><b>Valve Identification</b></h4>
+												<hr>
+												<div class="row mt-2">
+													<div class="col-5">
+														<label>Tag No</label>
+													</div>
+													<div class="col-6">
+														<input type="text" class="form-control-sm-sm">
+													</div>
+												</div>
+												<div class="row mt-2">
+													<div class="col-5">
+														<label>Quantity</label>
+													</div>
+													<div class="col-6">
+														<input type="text" class="form-control-sm-sm">
+													</div>
+												</div>
+												<div class="row mt-2">
+													<div class="col-5">
+														<label>Application</label>
+													</div>
+													<div class="col-6">
+														<input type="text" class="form-control-sm-sm">
+													</div>
+												</div>
+												<div class="row mt-2">
+													<div class="col-5">
+														<label>Serial No</label>
+													</div>
+													<div class="col-6">
+														<input type="text" class="form-control-sm-sm">
+													</div>
+												</div>
 											</div>
 										</div>
-										<div class="row  mt-2 mb-2">
-											<div class="col-5">
-												<label for="Serial">Serial No</label>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<div class="pressure mt-3 shadow p-3" style="width: 105%;">
+												<h4><b>Pressure-Temp Rating</b></h4>
+												<hr>
+												<div class="row mt-2">
+													<div class="col-5">
+														<label>Rating</label>
+													</div>
+													<div class="col-6">
+														<select id="" class="form-control-sm-sm" style="width: 120%;">
+															<option>ASME 900</option>
+															<option>ASME 150</option>
+															<option>ASME 300</option>
+															<option>ASME 600</option>
+														</select>
+													</div>
+												</div>
+												<div class="row mt-2">
+													<div class="col-5">
+														<label>Body Material</label>
+													</div>
+													<div class="col-6">
+														<select id="" class="form-control-sm-sm" style="width: 120%;">
+															<option>ASTM A216 WCB</option>
+															<option>ASTM A216 WCC</option>
+															<option>ASTM A352 LCC</option>
+														</select>
+													</div>
+												</div>
+												<div class="row mt-2">
+													<div class="col-5">
+														<label>Shut-Off ∆P</label>
+													</div>
+													<div class="col-3">
+														<input type="text" class="form-control-sm-sm" style="width: 150%;">
+													</div>
+													<div class="col-3">
+														<select id="" class="form-control-sm-sm" style="width: 150%;">
+															<option>bar</option>
+															<option>Kpa</option>
+															<option>MPa</option>
+															<option>Pa</option>
+															<option>kg/cm2</option>
+															<option>psi</option>
+														</select>
+													</div>
+												</div>
+												<div class="row mt-2">
+													<div class="col-5">
+														<label>Max Pressure</label>
+													</div>
+													<div class="col-3">
+														<input type="text" class="form-control-sm-sm" style="width: 150%;">
+													</div>
+													<div class="col-3">
+														<select id="" class="form-control-sm-sm" style="width: 150%;">
+															<option>bar(g)</option>
+															<option>bar(a)</option>
+															<option>Kpa(g)</option>
+															<option>Kpa(a)</option>
+														</select>
+													</div>
+												</div>
+												<div class="row mt-2">
+													<div class="col-5">
+														<label>Max Temp</label>
+													</div>
+													<div class="col-3">
+														<input type="text" class="form-control-sm-sm" style="width: 150%;">
+													</div>
+													<div class="col-3">
+														<select id="" class="form-control-sm-sm" style="width: 150%;">
+															<option>°C</option>
+															<option>°F</option>
+															<option>C</option>
+															<option>F</option>
+														</select>
+													</div>
+												</div>
+												<div class="row mt-2">
+													<div class="col-5">
+														<label>Min Temp</label>
+													</div>
+													<div class="col-3">
+														<input type="text" class="form-control-sm-sm" style="width: 150%;">
+													</div>
+													<div class="col-3">
+														<select id="" class="form-control-sm-sm" style="width: 150%;">
+															<option>°C</option>
+															<option>°F</option>
+															<option>C</option>
+															<option>F</option>
+														</select>
+													</div>
+												</div>
 											</div>
-											<div class="col-7">
-												<input type="text" class="" name="Serial"
-													style="height: 25px; width: 100%;">
-											</div>
-										</div>
-										<h4><b>Pressure-Temp Rating</b></h4>
-										<hr>
-										<div class="row mt-2">
-
-
-
-											<div class="col-5">
-												<label for="Rating">Rating</label>
-											</div>
-											<div class="col-7">
-												<select class="" name="Rating" id="Rating"
-													style="height: 25px; width: 90%;">
-													<option value=" ">ASME 900</option>
-													<option value="">ASME 150</option>
-													<option value="">ASME 300</option>
-													<option value="">ASME 600</option>
-												</select>
-											</div>
-										</div>
-										<div class="row  mt-2">
-											<div class="col-5">
-												<label for="BODY">Body Material</label>
-											</div>
-											<div class="col-7">
-												<select class="" name="BODY" id="Rating"
-													style="width: 90%; height: 25px;">
-													<option value=" ">ASTM A216 WCB</option>
-													<option value="">ASTM A216 WCC</option>
-													<option value="">ASTM A352 LCC</option>
-
-												</select>
-											</div>
-										</div>
-										<div class="row  mt-2">
-											<div class="col-5">
-												<label for="shut off">Shut-Off
-													ΔP </label>
-											</div>
-											<div class="col-3">
-												<input type="text" class="form-control-sm-sm" name="bid due"
-													style="width: 120%; height: 25px;">
-											</div>
-											<div class="col-3">
-												<select class="" style="width: 120%; height: 25px;">
-													<option value="bar">bar</option>
-													<option value="kpa">KPa</option>
-													<option value="mpa">MPa</option>
-													<option value="pa">Pa</option>
-													<option value="kg/cm2">kg/cm²</option>
-													<option value="psia">psi</option>
-												</select>
-											</div>
-										</div>
-										<div class="row  mt-2 ">
-											<div class="col-5">
-												<label for="Max Pressure">Max Pressure</label>
-											</div>
-											<div class="col-3">
-												<input type="text" class="form-control-sm-sm" name="max pressure"
-													style="width: 120%; height: 25px;">
-											</div>
-											<div class="col-3">
-												<select class="" style="width: 120%; height: 25px;">
-
-													<option value="bar">bar(g)</option>
-													<option value="bar">bar(a)</option>
-													<option value="kpa">KPa(a)</option>
-													<option value="kpa">KPa(g)</option>
-													<option value="mpa">MPa(a)</option>
-													<option value="mpa">MPa(g)</option>
-													<option value="pa">Pa(a)</option>
-													<option value="pa">Pa(g)</option>
-													<option value="inh20">in H2O(a)</option>
-													<option value="inh20">in H2O(g)</option>
-													<option value="inhg">in Hg(a)</option>
-													<option value="inhg">in Hg(g)</option>
-													<option value="kg/cm2">kg/cm²(a)</option>
-												</select>
-											</div>
-
-										</div>
-										<div class="row  mt-2 ">
-											<div class="col-5">
-												<label for="Max Temp">Max Temp</label>
-											</div>
-											<div class="col-3">
-												<input type="text" class="form-control-sm-sm" name=" Max Temp"
-													style="width: 120%; height: 25px;">
-											</div>
-											<div class="col-3">
-												<select class="form-control-sm-sm" style="width: 120%; height: 25px;">
-
-													<option value="C">°C</option>
-													<option value="F">°F</option>
-													<option value="K">K</option>
-													<option value="R">R</option>
-												</select>
-											</div>
-
-										</div>
-										<div class="row  mt-2 ">
-											<div class="col-5">
-												<label for="Min Temp">Min Temp</label>
-											</div>
-											<div class="col-3">
-												<input type="text" class="form-control-sm-sm" name="Min Temp"
-													style="width: 120%; height: 25px;">
-											</div>
-											<div class="col-3">
-												<select class="form-control-sm-sm" style="width: 120%; height: 25px;">
-													<option value="C">°C</option>
-													<option value="F">°F</option>
-													<option value="K">K</option>
-													<option value="R">R</option>
-												</select>
-											</div>
-
 										</div>
 									</div>
 								</div>
@@ -326,7 +308,7 @@
 											</select>
                                         </div>
                                     </div> -->
-									<div class="valveselection shadow p-3 mt-3" style="height: 95%; width: 105%;">
+									<div class="valveselection shadow p-3" style="height: 100%; width: 105%;">
 										<h4><b>Valve Selection</b></h4>
 										<hr>
 										<div class="row  mt-2 ">
@@ -403,7 +385,7 @@
 										</div>
 										<div class="row mt-2">
 											<div class="col-6">
-												<label for="Packing Type">packing Type</label>
+												<label for="Packing Type">Packing Type</label>
 
 											</div>
 											<div class="col-6">
@@ -434,7 +416,7 @@
 										<div class="row mt-2">
 											<div class="col-6">
 												<label for="Flow Charcter">Flow
-													characteristic</label>
+													Characteristic</label>
 
 											</div>
 											<div class="col-6">
@@ -496,7 +478,7 @@
 											</select>
                                         </div>
                                     </div> -->
-									<div class="materialselection shadow p-3 mt-3" style="height: 95%; width: 105%;">
+									<div class="materialselection shadow p-3" style="height: 100%; width: 105%;">
 										<h4><b>Material Selection</b></h4>
 										<hr>
 										<div class="row  mt-2 ">
@@ -515,7 +497,7 @@
 
 											</div>
 										</div>
-										<div class="row mt-2">
+										<!-- <div class="row mt-2">
 											<div class="col-6">
 												<label for="Body-Bonnet NDE 1">Body-Bonnet NDE1</label>
 
@@ -531,7 +513,7 @@
 
 
 											</div>
-										</div>
+										</div> -->
 										<!-- <div class="row mt-2">
 										<div class="col-6">
 											<label for="Body-Bonnet NDE2">Body-Bonnet NDE2</label>
@@ -661,20 +643,20 @@
 
 								<div class="col-3">
 									<div class="row">
-										<div class="col-10 shadow mt-5" style="margin-left: 4%; height: 260px;">
-											<h4><b>Warnings</b></h4>
+										<div class="col-10 shadow " style=" margin-left: 4%; height: 260px;">
+											<h4 style="margin-top: 6%;"><b>Warnings</b></h4>
 											<hr>
 										</div>
-										<div class="valvedatabtn" style="margin-top:65%; margin-left: 30%;">
+										<!-- <div class="valvedatabtn" style="margin-top:65%; margin-left: 30%;">
 											<button type="button" class="btn badge-danger"
 												style="background-color: #04AA6D;">Update Item</button>
-											<!-- <button type="button" class="btn btn-info">create New Item</button> -->
-										</div>
+											<button type="button" class="btn btn-info">create New Item</button>
+										</div> -->
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-3">
+							<div class="row mt-3">
+								<div class="col-3 mt-2">
 									<div class="row">
 										<div class="col-5">
 											<label for="Design Standard" style="margin-left: 12%;">Design
@@ -690,21 +672,40 @@
 									</div>
 
 								</div>
-								<div class="col-3">
+								<div class="col-3 mt-2">
 									 <div class="row">
                                         <div class="col-6">
                                             <label for="valve Style" style="margin-left: 12%;">Valve Style</label>
                                         </div>
                                         <div class="col-6">
                                             <select class="form-control-sm-sm" style="width: 100%;">
-												<option value="Globle">Globle</option>
+												<option value="Globle">Globe</option>
 												<option value="Butterfly">ButterFly</option>
 											</select>
                                         </div>
                                     </div> 
 
 								</div>
+								<div class="col-6">
+									<div class="row justify-content-end">
+										<div class="col-4">
+											<div class="valvedatabtn">
+												<button type="button" class="btn badge-danger"
+													style="background-color: #04AA6D;">Update Item</button>
+												<!-- <button type="button" class="btn btn-info">create New Item</button> -->
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
+
+							<!-- <div class="row" style="margin-bottom: 30%;">
+								<div class="valvedatabtn">
+									<button type="button" class="btn badge-danger"
+										style="background-color: #04AA6D;">Update Item</button>
+									<button type="button" class="btn btn-info">create New Item</button> 
+								</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
