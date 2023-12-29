@@ -335,3 +335,12 @@ td {
 a:link {
     text-decoration: none;
 }
+
+
+/* ----------------------------------------------View Data CSS---------------------------------------------------------------------- */
+.viewbtn
+{
+    background-color: #dedbdb;
+    color: #000000;
+    font-size: 12px;
+}
