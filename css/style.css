@@ -13,8 +13,28 @@ img {
     text-overflow: ellipsis;
 }
 
+/* ------------------------Valve Data-------------------------------------------------------------- */
+
+
+/* valvedata entry code */
+.valvedatadetails {
+    margin-top: 30px;
+}
+
+.valvebutton {
+    background-color: #04AA6D;
+    font-size: 11px;
+    color: white;
+
+}
+
+h6 {
+    color: black;
+}
+
 label {
     font-size: 11px;
+    color: black;
 }
 
 input {
@@ -28,6 +48,26 @@ select {
     width: 100%;
 }
 
+
+.valveselection {
+    height: 100%;
+    width: 105%;
+}
+
+.materialselection {
+    height: 100%;
+    width: 105%;
+
+}
+
+.warnings {
+    margin-left: 4%;
+    height: 260px;
+
+
+}
+
+/* --------------------------------------------------- */
 .sidenav {
     background-color: #353a40;
     position: fixed;
@@ -70,9 +110,10 @@ thead th {
     top: 0;
     position: sticky;
     background-color: white;
-    white-space:nowrap;
+    white-space: nowrap;
 }
-td{
+
+td {
     flex-wrap: nowrap;
 }
 
@@ -285,15 +326,8 @@ td{
     box-shadow: 2px 7px 15px 1px #cbd0d7; */
 }
 
-/* valvedata entry code */
-.valvedatadetails {
-    margin-top: 30px;
-}
 
-/* .valvedatabtn
-{
-    margin-top: 10%;
-} */
+
 /* .actuator
 {
     margin-right: 30px;
