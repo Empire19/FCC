@@ -12,12 +12,15 @@ img {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+label
+{
+    font-size: 11px;
+}
 /* ------------------------Valve Data------------------------------------------------------------------------------------------- */
 
 
 /* valvedata entry code */
-.valvedatadetails {
+/* .valvedatadetails {
     margin-top: 30px;
 }
 
@@ -65,7 +68,7 @@ select {
     height: 260px;
 
 
-}
+} */
 
 /* --------------------------------------------------- */
 .sidenav {
@@ -183,79 +186,98 @@ td {
     /* background-color: #353a40; */
     color: white;
 }
-
-/* .my-custom-scrollbar {
-    position: relative;
-    height: 200px;
-    overflow: auto;
-} */
-
-/* .table-wrapper-scroll-y {
-    display: block;
-}  */
-
-/* tbody{
-    height:200px;
-    display:block;
-    overflow:scroll
-  }  */
-/* table, tr td {
-    border: 1px solid #333;
-} */
-
-/* tbody {
-    display: block;
-    height: 170px;
-    overflow: auto;
-} */
-/* thead, tbody tr {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-} */
-
-/* even columns width , fix width of table too*/
-/* thead {
-    width: calc( 100% - 1em )
-}  */
-
-/* table {
-    width: 400px;
-}  */
-
-/* .tablesizing table tr {
-    height: 30px;
-}  */
-
-
-/* .nav-hidden {
-    margin-left: -230px;
-} */
-
-/* .fcc-hidden {
-    margin-left: -246px;
-} */
-
-/* Main content */
-/* .main-content {
-    transition: margin-left 0.8s;
-    
-}
-
-.main-content-expanded {
-    margin-left: 0;
-}
-
-.main-content-collapsed {
-    margin-left: -280px;
-} */
-
 #btn {
     background-color: #353a40;
     outline: none;
     border: none;
 }
 
+
+/* ----------------------------------------------------project details page-------------------------------------------------------------- */
+
+.projectdetail_heading
+{
+    font-size: 15px;
+}
+.projectdetail_input
+{
+    width: 100%;
+}
+.projectdetail_select
+{
+    width: 100%;
+}
+.projectdetail_btn
+{
+    background-color: #04AA6D; 
+    color: white;
+    font-size: 11px;
+}
+
+/* ---------------------------------------------------------------valve data page-------------------------------------------------------- */
+
+.valvedata_heading
+{
+    font-size: 15px;
+}
+.valvedata_input
+{
+    width: 110%;
+    height: 26px;
+    font-size: 11px;
+}
+.valvedata_select
+{
+    width: 110%;
+    height: 26px;
+    background-color: white;
+    border: 1px solid #333;
+    font-size: 11px;
+}
+.valvedata_input1
+{
+    width: 120%;
+    height: 26px;
+    font-size: 11px;
+}
+.valvedata_select1
+{
+    width: 120%;
+    height: 26px;
+    background-color: white;
+    border: 1px solid #333;
+    font-size: 11px;
+}
+.valvedata_inputbox
+{
+    width: 150%;
+}
+.valvedata_selectbox
+{
+    width: 150%;
+    height: 26px;
+    background-color: white;
+    border: 1px solid #333;
+    font-size: 11px;
+}
+.valveselection
+{
+    height: 100%;
+}
+.materialselection
+{
+    height: 100%;
+}
+.warnings
+{
+    height: 240px;
+}
+.valvebutton {
+    background-color: #04AA6D;
+    font-size: 11px;
+    color: white;
+}
+/* -------------------------------------valvesizing page------------------------------------------------------------------------ */
 .sizingtable {
     height: 25px;
     border-top: 1px solid #607274;
