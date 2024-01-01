@@ -98,7 +98,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="topicons">
-							<div class="row" style="margin-left: 1%;">
+							<div class="row ml-1">
 								<div class="icon">
 									<i class="fa-solid fa-backward-step" data-toggle="tooltip" title="first"></i>
 									<i class="fa-solid fa-angle-left ml-3" data-toggle="tooltip" title="Previous"></i>
@@ -126,15 +126,15 @@
 								<div class="col-3">
 									<div class="row">
 										<div class="col-12">
-											<div class="valve identification p-3 shadow" style="width: 105%;">
-												<h6><b>Valve Identification</b></h6>
+											<div class="valveidentification p-3 shadow">
+												<h6 class="valvedata_heading"><b>Valve Identification</b></h6>
 												<hr>
 												<div class="row mt-2">
 													<div class="col-5">
 														<label>Tag No</label>
 													</div>
 													<div class="col-6">
-														<input type="text" class="form-control-sm-sm" name="tag no" style="width: 120%;">
+														<input type="text" class="form-control-sm-sm valvedata_input1" name="tag no">
 													</div>
 												</div>
 												<div class="row mt-2">
@@ -142,7 +142,7 @@
 														<label>Quantity</label>
 													</div>
 													<div class="col-6">
-														<input type="text" class="form-control-sm-sm" name="quality" style="width: 120%;">
+														<input type="text" class="form-control-sm-sm valvedata_input1" name="quality">
 													</div>
 												</div>
 												<div class="row mt-2">
@@ -150,7 +150,7 @@
 														<label>Application</label>
 													</div>
 													<div class="col-6">
-														<input type="text" class="form-control-sm-sm" style="width: 120%;" name="application">
+														<input type="text" class="form-control-sm-sm valvedata_input1" name="application">
 													</div>
 												</div>
 												<div class="row mt-2">
@@ -158,7 +158,7 @@
 														<label>Serial No</label>
 													</div>
 													<div class="col-6">
-														<input type="text" class="form-control-sm-sm" style="width: 120%;" name="serial no">
+														<input type="text" class="form-control-sm-sm valvedata_input1" name="serial no">
 													</div>
 												</div>
 											</div>
@@ -166,15 +166,15 @@
 									</div>
 									<div class="row">
 										<div class="col-12">
-											<div class="pressure mt-3 shadow p-3" style="width: 105%;">
-												<h6><b>Pressure-Temp Rating</b></h6>
+											<div class="pressure mt-3 shadow p-3">
+												<h6 class="valvedata_heading"><b>Pressure-Temp Rating</b></h6>
 												<hr>
 												<div class="row mt-2">
 													<div class="col-5">
 														<label>Rating</label>
 													</div>
 													<div class="col-6">
-														<select id="" class="form-control-sm-sm" style="width: 120%;" name="rating">
+														<select id="" class="form-control-sm-sm valvedata_select1" name="rating">
 															<option>ASME 900</option>
 															<option>ASME 150</option>
 															<option>ASME 300</option>
@@ -187,7 +187,7 @@
 														<label>Body Material</label>
 													</div>
 													<div class="col-6">
-														<select id="" class="form-control-sm-sm" style="width: 120%;" name="body material">
+														<select id="" class="form-control-sm-sm valvedata_select1" name="body material">
 															<option>ASTM A216 WCB</option>
 															<option>ASTM A216 WCC</option>
 															<option>ASTM A352 LCC</option>
@@ -199,10 +199,10 @@
 														<label>Shut-Off ∆P</label>
 													</div>
 													<div class="col-3">
-														<input type="text" class="form-control-sm-sm" style="width: 150%;" name="shut off">
+														<input type="text" class="form-control-sm-sm valvedata_inputbox" name="shut off">
 													</div>
 													<div class="col-3">
-														<select id="" class="form-control-sm-sm" style="width: 150%;" name="shut off">
+														<select id="" class="form-control-sm-sm valvedata_selectbox"  name="shut off">
 															<option>bar</option>
 															<option>Kpa</option>
 															<option>MPa</option>
@@ -217,10 +217,10 @@
 														<label>Max Pressure</label>
 													</div>
 													<div class="col-3">
-														<input type="text" class="form-control-sm-sm" style="width: 150%;" name="max pressure">
+														<input type="text" class="form-control-sm-sm valvedata_inputbox"  name="max pressure">
 													</div>
 													<div class="col-3">
-														<select id="" class="form-control-sm-sm" style="width: 150%;" name="max pressure">
+														<select id="" class="form-control-sm-sm valvedata_selectbox" name="max pressure">
 															<option>bar(g)</option>
 															<option>bar(a)</option>
 															<option>Kpa(g)</option>
@@ -233,10 +233,10 @@
 														<label>Max Temp</label>
 													</div>
 													<div class="col-3">
-														<input type="text" class="form-control-sm-sm" style="width: 150%;" name="max temp">
+														<input type="text" class="form-control-sm-sm valvedata_inputbox" name="max temp">
 													</div>
 													<div class="col-3">
-														<select id="" class="form-control-sm-sm" style="width: 150%;" name="max temp">
+														<select id="" class="form-control-sm-sm valvedata_selectbox" name="max temp">
 															<option>°C</option>
 															<option>°F</option>
 															<option>C</option>
@@ -249,10 +249,10 @@
 														<label>Min Temp</label>
 													</div>
 													<div class="col-3">
-														<input type="text" class="form-control-sm-sm" style="width: 150%;" name="min temp">
+														<input type="text" class="form-control-sm-sm valvedata_inputbox"  name="min temp">
 													</div>
 													<div class="col-3">
-														<select id="" class="form-control-sm-sm" style="width: 150%;" name="min temp">
+														<select id="" class="form-control-sm-sm valvedata_selectbox" name="min temp">
 															<option>°C</option>
 															<option>°F</option>
 															<option>C</option>
@@ -269,16 +269,16 @@
 								<div class="col-3">
 									
 									<div class="valveselection shadow p-3" >
-										<h6><b>Valve Selection</b></h6>
+										<h6 class="valvedata_heading"><b>Valve Selection</b></h6>
 										<hr>
 										<div class="row  mt-2 ">
 											<div class="col-6">
 												<label for="Valve Series">Valve Series</label>
 
 											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm" name="Valve Series" id="Valve Series"
-													style="width: 100%;" name="valve series">
+											<div class="col-6 mr-0">
+												<select class="form-control-sm-sm valvedata_select" name="Valve Series" id="Valve Series"
+												 name="valve series">
 													<option value="">20</option>
 													<option value="">10</option>
 													<option value="">11</option>
@@ -292,8 +292,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="end Connection"
-													id="end connection" style="width: 100%;"  name="end connection">
+												<select class="form-control-sm-sm valvedata_select" name="end Connection"
+													id="end connection"  name="end connection">
 													<option value="">None</option>
 													<option value="">Integral Flange</option>
 													<option value="">Loose Flange</option>
@@ -309,8 +309,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="end finish" id="end connection" name="end finish"
-													style="width: 100%;">
+												<select class="form-control-sm-sm valvedata_select" name="end finish" id="end connection" name="end finish"
+												>
 													<option value="">N/A</option>
 													<option value="">RF Serrated</option>
 													<option value="">RF(125-250AARH)3.2-6.3um</option>
@@ -324,8 +324,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="bonnet finish"
-													id="bonnet finish" style="width: 100%;">
+												<select class="form-control-sm-sm valvedata_select" name="bonnet finish"
+													id="bonnet finish">
 													<option value="">Standard</option>
 													<option value="">Standard Extension</option>
 													<option value="">Normalized/Finned</option>
@@ -339,8 +339,8 @@
 
 											</div>
 											<div class="col-6">
-												<input type="text" class="form-control-sm-sm"
-													name="bonnet Ext Dimension" style="width: 100%;">
+												<input type="text" class="form-control-sm-sm valvedata_input"
+													name="bonnet Ext Dimension">
 											</div>
 										</div>
 										<div class="row mt-2">
@@ -349,8 +349,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="Paking Type" id="packing Type"
-													style="width: 100%;">
+												<select class="form-control-sm-sm valvedata_select" name="Paking Type" id="packing Type"
+												>
 
 													<option value="">Single</option>
 													<option value="">Double</option>
@@ -364,8 +364,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="trim type" id="Trim Type"
-													style="width: 100%;">
+												<select class="form-control-sm-sm valvedata_select" name="trim type" id="Trim Type"
+												>
 													<option value="">Contour</option>
 													<option value="">Act-1</option>
 													<option value="">Act-2</option>
@@ -380,8 +380,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="flow charcter"
-													id="Flow Charcter" style="width: 100%;">
+												<select class="form-control-sm-sm valvedata_select" name="flow charcter"
+													id="Flow Charcter">
 													<option value="">Equal%</option>
 													<option value="">Linear</option>
 
@@ -395,8 +395,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="flow direction"
-													id="Flow Direction" style="width: 100%;">
+												<select class="form-control-sm-sm valvedata_select" name="flow direction"
+													id="Flow Direction">
 													<option value="">Over</option>
 													<option value="">Under</option>
 													<option value="">Seat Downstream</option>
@@ -410,8 +410,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="height: 25px;" name="seat seakage "
-													id="Seat Leakage Class" style="width: 100%;">
+												<select class="form-control-sm-sm valvedata_select" name="seat seakage "
+													id="Seat Leakage Class">
 													<option value="">ANSI Class II</option>
 													<option value="">ANSI Class III</option>
 													<option value="">ANSI Class IV</option>
@@ -439,7 +439,7 @@
                                         </div>
                                     </div> -->
 									<div class="materialselection shadow p-3">
-										<h6><b>Material Selection</b></h6>
+										<h6 class="valvedata_heading"><b>Material Selection</b></h6>
 										<hr>
 										<div class="row  mt-2 ">
 											<div class="col-6">
@@ -448,8 +448,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="valve series" id="Valve Series"
-													style="width: 100%; height: 26px;">
+												<select class="form-control-sm-sm valvedata_select" name="valve series" id="Valve Series"
+													>
 													<option value="">20</option>
 													<option value="">10</option>
 													<option value="">11</option>
@@ -464,8 +464,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="shaft" id="shaft"
-													style="width: 100%;height: 26px;">
+												<select class="form-control-sm-sm valvedata_select" name="shaft" id="shaft"
+													>
 													<option value="">None</option>
 													<option value="">Integral Flange</option>
 													<option value="">Loose Flange</option>
@@ -479,8 +479,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="disc" id="disc"
-													style="width: 100%; height: 26px;">
+												<select class="form-control-sm-sm valvedata_select" name="disc" id="disc"
+													>
 													<option value="">None</option>
 													<option value="">Integral Flange</option>
 													<option value="">Loose Flange</option>
@@ -494,8 +494,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="seat" id="seat"
-													style="width: 100%; height: 26px;">
+												<select class="form-control-sm-sm valvedata_select" name="seat" id="seat"
+												>
 													<option value="">None</option>
 													<option value="">Integral Flange</option>
 													<option value="">Loose Flange</option>
@@ -509,8 +509,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="packing" id="packing"
-													style="width: 100%; height: 26px;">
+												<select class="form-control-sm-sm valvedata_select" name="packing" id="packing"
+												>
 													<option value="">None</option>
 													<option value="">Integral Flange</option>
 													<option value="">Loose Flange</option>
@@ -524,8 +524,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="balance seal"
-													id="Flow Charcter" style="width: 100%; height: 26px;">
+												<select class="form-control-sm-sm valvedata_select" name="balance seal"
+													id="Flow Charcter">
 													<option value="">None</option>
 													<option value="">Integral Flange</option>
 													<option value="">Loose Flange</option>
@@ -540,8 +540,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="stud/nut"
-													style="width: 100%; height: 26px;">
+												<select class="form-control-sm-sm valvedata_select" name="stud/nut"
+												>
 													<option value="">None</option>
 													<option value="">Integral Flange</option>
 													<option value="">Loose Flange</option>
@@ -555,8 +555,8 @@
 
 											</div>
 											<div class="col-6">
-												<select class="form-control-sm-sm" name="gasket" id="gasket"
-													style="width: 100%; height: 26px;">
+												<select class="form-control-sm-sm valvedata_select" name="gasket" id="gasket"
+												>
 													<option value="">None</option>
 													<option value="">Integral Flange</option>
 													<option value="">Loose Flange</option>
@@ -571,8 +571,8 @@
 								</div>
 								<div class="col-3">
 									<div class="row">
-										<div class="col-10 shadow  warnings" >
-											<h6 style="margin-top: 6%;"><b>Warnings</b></h6>
+										<div class="col-10 shadow  p-3  warnings" >
+											<h6 class="valvedata_heading"><b>Warnings</b></h6>
 											<hr>
 										</div>
 										<!-- <div class="valvedatabtn" style="margin-top:65%; margin-left: 30%;">
@@ -591,8 +591,8 @@
 												Standard</label>
 										</div>
 										<div class="col-6">
-											<select class="form-control-sm-sm"
-												style="width: 110%; margin-right: 2%; margin-left: 10%;" name="standard">
+											<select class="form-control-sm-sm valvedata_select"
+												 name="standard">
 												<option value="asme">ASME</option>
 												<option value="api">API</option>
 											</select>
@@ -606,7 +606,7 @@
                                             <label for="valve Style" style="margin-left: 12%;">Valve Style</label>
                                         </div>
                                         <div class="col-6">
-                                            <select class="form-control-sm-sm" style="width: 100%;" name="valve style">
+                                            <select class="form-control-sm-sm valvedata_select" name="valve style">
 												<option value="Globle">Globe</option>
 												<option value="Butterfly">ButterFly</option>
 											</select>
