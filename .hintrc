@@ -17,6 +17,7 @@
         "select-name": "off"
       }
     ],
-    "axe/parsing": "off"
+    "axe/parsing": "off",
+    "no-protocol-relative-urls": "off"
   }
 }
