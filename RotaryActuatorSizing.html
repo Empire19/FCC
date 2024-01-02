@@ -15,33 +15,6 @@
     <!-- <link rel="stylesheet" href="css/table.css"> -->
     <script src="js/fcc.js"></script>
     <title>FCC</title>
-    <style>
-        label {
-            font-size: 12px;
-        }
-
-        input {
-            height: 100%;
-            font-size: 12px;
-
-        }
-
-        select {
-            height: 100%;
-            font-size: 12px;
-            width: 100%;
-            background-color: white;
-        }
-
-        h4 {
-            font-size: 20px;
-        }
-
-        .btn {
-            font-size: 14px;
-            width: 150px;
-        }
-    </style>
 <!-- Extrenal css file  
 /* ACtuator Sizing */
 .actuator{
@@ -155,13 +128,126 @@
                     <div class="col-12 mt-4">
                         <div class="row mt-1">
                             
-                            <div class="col-4">
+
+                            <div class="col-3 mt-3">
+                                <div class="actuator shadow p-2">
+                                    <h6 class="actuator_heading"><b>Actuator Selection</b></h6>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="type">Actuator Type</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select class="manual gearbox actuator_select" name="type" id="type">
+                                                <option value="">Manual Gearbox</option>
+                                                <option value="">Spring & Diaphragam</option>
+                                                <option value="">Multi Spring 7 Diaphragam</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 pr-0">
+                                            <!-- Spring Action / Fail Mode -->
+                                            <label for="Spring Action">Spring Action / Fail Mode</label>
+
+                                        </div>
+                                        <div class="col-6">
+                                            <select class="Spring Action actuator_select" name="Spring Action"
+                                                id="Spring Action">
+                                                <option value="">N/A</option>
+                                                <option value="">Fail Open</option>
+                                                <option value="">Fail Close</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <!-- Hand Wheel -->
+                                            <label for="   Hand Wheel"> Hand Wheel</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select class="hand Wheel actuator_select" name="hand Wheel" id="hand Wheel">
+                                                <option value="">N/A</option>
+                                                <option value="">Side mounted</option>
+                                                <option value="">Top Mounted</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <!-- Orientation -->
+                                            <label for="Orientation">Orientation</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <select class=" Orientation actuator_select" name="  Orientation "
+                                                id=" Orientation">
+                                                <option value="">N/A</option>
+                                                <option value="">Horizontal</option>
+                                                <option value="">Vertical</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <!-- Available Air Supply -->
+                                            <label for="Available">Air Supply Pressure</label>
+
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="number" class="form-control-sm-sm actuator_input1">
+                                        </div>
+                                        <div class="col-3">
+                                            <select class="form-control-sm-sm actuator_select1" name="   Air Supply" id=" Air Supply">
+                                                <option value="">Psig</option>
+
+                                                <option value="">Psia</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <!-- Available Air Supply -->
+                                            <label for="Available">Set Pressure</label>
+
+                                        </div>
+                                        <div class="col-3">
+                                            <input type="number" class="form-control-sm-sm actuator_input1">
+                                        </div>
+                                        <div class="col-3">
+                                            <select class="actuator_select1 form-control-sm-sm" name="   Air Supply" id=" Air Supply">
+                                                <option value="">Psig</option>
+
+                                                <option value="">Psia</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <!-- Shut Off Pressure -->
+                                            <label for="Shut off">Shut Off Pressure</label>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" id="shut off" class="form-control-sm-sm actuator_input" name="shut off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Rotarybutton mt-2">
+                                    <a href="slidingstem.html"><button type="button" class="btn Rotaryactuator_button1">Sliding Stem Actuator Sizing</button></a><br>
+                                    <a href="RotaryActuatorSizing.html"><button type="button" class="btn  btn-info Rotaryactuator_button2 mt-2">Rotary Actuator Sizing</button></a>
+                                    <a href="#"><button type="button" class="btn Rotaryactuator_button3 mt-2">Stroke Time Calculation</button></a>
+                                </div>
+                            </div>
+
+
+                            <div class="col-4 mt-3 ml-1">
                                 <div class="trim mt-1">
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="row">
                                                 <div class="col-3">
-                                                    Trim
+                                                    <label>Trim</label>
                                                 </div>
                                                 <div class="col-3">
                                                     <input type="text" class="form-control-sm-sm">
@@ -170,9 +256,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <h5 style="margin-top: 20px;"><b>Input</b></h5>
+                                <h6 class="Rotary_heading mt-1"><b>Input</b></h6>
 
-                                <div class="row" style="margin-left: 1px;">
+                                <div class="row ml-1">
                                     <div class="col-6" style="border-bottom:  1px solid #607274;">
                                         
                                         <div class="row sizingtableleft" ><p class="sizingp">Description</p></div>
@@ -193,88 +279,84 @@
                                     <div class="col-3" style="border-bottom:  1px solid #607274;">
                                         <div class="row sizingtableleft"><p class="sizingp">Unit</p></div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>deg</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>psig</option>
                                             </select>
                                         </div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>lbf</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>inch</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-3" style="border-bottom:  1px solid #607274;">
                                         <div class="row sizingtableleft"><p class="sizingp">Values</p></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
                                     </div>
                                 </div>
 
-                                <div class="button mt-5 ml-3">
+                                <div class="button mt-3 ml-3">
                                     <div class="row">
-                                        <button type="button" class="btn btn-info">Calculate</button>
-                                        <a href="Selectacuator(rotary).html"><button type="button" class="btn ml-3" style="background-color: #04AA6D; color: white;">Select Actuator</button></a>
-                                    </div>
-                                    <div class="row mt-2">
-                                        <a href="Rotarystokespeed.html"><button type="button" class="btn btn-info">Storke Speed</button></a>
-                                        <button type="button" class="btn ml-3" style="background-color: #04AA6D; color: white;">Spec Sheet</button>
+                                        <button type="button" class="btn btn-info input_btn1">Calculate</button>
+                                        <a href="Selectacuator(rotary).html"><button type="button" class="btn ml-3 input_btn2">Select Actuator</button></a>
                                     </div>
                                 </div>
                             </div>
 
 
-                            <div class="col-4" style="margin-left: 2%;">
+                            <div class="col-4 mt-3">
                                 <div class="flow">
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="row">
                                                 <div class="col-5">
-                                                    Flow Direction
+                                                    <label>Flow Direction</label>
                                                 </div>
                                                 <div class="col-3">
                                                     <input type="text" class="form-control-sm-sm">
@@ -283,7 +365,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <h5 style="font-size: 20px; margin-top: 20px;"><b>Calculated Results</b></h5>
+                                <h5 class="Rotary_heading mt-1"><b>Calculated Results</b></h5>
                                 <div class="row ml-1">
                                     <div class="col-6" style="border-bottom:  1px solid #607274;">
                                         <div class="row sizingtableleft"><p class="sizingp">Description</p></div>
@@ -313,108 +395,108 @@
                                     <div class="col-3" style="border-bottom:  1px solid #607274;">
                                         <div class="row sizingtableleft"><p class="sizingp">Unit</p></div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>   
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>   
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>   
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>   
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>   
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>   
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>   
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option></option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>bar</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option></option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N.m</option>
                                             </select>
                                         </div> 
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N.m</option>
                                             </select>
                                         </div> 
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N.m</option>
                                             </select>
                                         </div> 
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N.m</option>
                                             </select>
                                         </div> 
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N.m</option>
                                             </select>
                                         </div> 
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N.m</option>
                                             </select>
                                         </div> 
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>N.m</option>
                                             </select>
                                         </div>                 
@@ -422,19 +504,19 @@
 
                                     <div class="col-3" style="border-bottom:  1px solid #607274;">
                                         <div class="row sizingtableleft"><p class="sizingp">Values</p></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm" style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm Rotary_select">
                                                 <option>3.5</option>
                                                 <option>2</option>
                                                 <option>2.5</option>
@@ -446,15 +528,15 @@
                                                 <option>6</option>
                                             </select>
                                         </div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm Rotary_input"></div>
                                         <!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div> -->
                                     </div>
                                 </div>
@@ -468,9 +550,13 @@
                         </div> -->
                     </div>
                 </div>
+                <div class="row justify-content-end mt-2">
+                    <div class="col-3">
+                        <button type="button" class="btn btn-info mt-1 savebtn">Save Next</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
-
 </html>

@@ -12,7 +12,10 @@ img {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+label
+{
+    font-size: 11px;
+}
 /* ------------------------Valve Data------------------------------------------------------------------------------------------- */
 
 
@@ -398,6 +401,162 @@ select {
 } */
 a:link {
     text-decoration: none;
+}
+
+/* ---------------------------------------------Actuatorsizing page css----------------------------------------------------------------- */
+
+/* .actuator
+{
+    width: 110%;
+} */
+.actuator_heading
+{
+    font-size: 15px;
+}
+.actuator_input
+{
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+}
+.actuator_select
+{
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+    background-color: white;
+    border: 1px solid #607274;
+}
+.actuator_input1
+{
+    width: 130%;
+    height: 70%;
+    font-size: 11px;
+}
+.actuator_select1
+{
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+    background-color: white;
+    border: 1px solid #607274;
+}
+.actuator_button1
+{
+    background-color: #04aa6d; 
+    color:white;
+    width: 100%;
+    font-size: 14px;
+}
+.actuator_button2
+{
+    color:white;
+    width: 100%;
+    font-size: 14px;
+}
+.actuator_button3
+{
+    background-color: rgb(139, 43, 43); 
+    color:white;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* -----------------------------------------------RotaryActuator page css---------------------------------------------------------- */
+
+.Rotaryactuator_button1
+{
+    background-color: #04aa6d; 
+    color:white;
+    width: 100%;
+    font-size: 14px;
+}
+.Rotaryactuator_button2
+{
+    color:white;
+    width: 100%;
+    font-size: 14px;
+}
+.Rotaryactuator_button3
+{
+    background-color: rgb(139, 43, 43); 
+    color:white;
+    width: 100%;
+    font-size: 14px;
+}
+.Rotary_heading
+{
+    font-size: 15px;
+}
+.input_btn1
+{
+    width: 150px;
+    font-size: 14px;
+}
+.input_btn2
+{
+    width: 150px;
+    background-color: #04AA6D; 
+    color: white;
+    font-size: 14px;
+}
+/* .input_btn3
+{
+    width: 150px;
+    background-color: #04AA6D; 
+    color: white;
+    font-size: 14px;
+}
+.input_btn4
+{
+    width: 150px;
+    font-size: 14px;
+} */
+.Rotary_input
+{
+    height: 100%;
+    font-size: 12px;
+    width: 100%;
+    border: 0px solid;
+}
+.Rotary_select
+{
+    height: 100%;
+    font-size: 12px;
+    width: 100%;
+    background-color: white;
+    border: 0px solid;
+}
+.savebtn
+{
+    margin-left: 60%;
+}
+
+/* ----------------------------------slidingstem page css------------------------------------------------------------------------- */
+.sliding_heading
+{
+    font-size: 15px;
+    margin-top: 3%;
+}
+.sliding_select
+{
+    height: 100%;
+    font-size: 12px;
+    width: 100%;
+    background-color: white;
+    border: 0px solid;
+}
+.sliding_input
+{
+    height: 100%;
+    font-size: 12px;
+    width: 100%;
+    border: 0px solid;
+}
+.slidingtop_input
+{
+    height: 90%;
+    font-size: 11px;
 }
 
 

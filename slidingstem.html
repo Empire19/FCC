@@ -15,39 +15,7 @@
     <!-- <link rel="stylesheet" href="css/table.css"> -->
     <script src="js/fcc.js"></script>
     <title>FCC</title>
-    <style>
-        label {
-            font-size: 12px;
-        }
-
-        input {
-            height: 100%;
-            font-size: 12px;
-
-        }
-
-        select {
-            height: 100%;
-            font-size: 12px;
-            width: 100%;
-            background-color: white;
-        }
-
-        h5 {
-            font-size: 20px;
-            margin-top: 20px;
-        }
-
-        .btn {
-            font-size: 14px;
-            width: 150px;
-
-        }
-        p {
-
-            font-size: 12px;
-        }
-    </style>
+    
 
     <!-- Extrenal css file  
 /* ACtuator Sizing */
@@ -158,58 +126,136 @@
                     </div>
                 </div>
 
-
-                <!-- <div class="container mt-4">
-                    <div class="row" style="margin-left: -90px;">
-
-                    
-                        <div class="col-4">
-                            <div class="row"> 
-                                <div class="col-2">Trim</div>
-                                <div class="col-3"><input type="text" class="" style="height: 20px;"></div>
+                <div class="row mt-5">
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-3">
+                                <label>Trim</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="text" class="form-control-sm-sm slidingtop_input">
                             </div>
                         </div>
-
-                
-                        <div class="col-4">
+                        <div class="actuator shadow p-2 mt-2">
+                            <h6 class="actuator_heading"><b>Actuator Selection</b></h6>
+                            <hr>
                             <div class="row">
-                                <div class="col-6 mb-5">Balancing</div>
-                                <div class="col-4"><input type="text" class="" style="height: 20px;"></div>
-                            </div>
-                        </div>
-
-               
-                        <div class="col-4">
-                            <div class="row">
-                                <div class="col-6">Flow Direction</div>
-                                <div class="col-3"><input type="text" class="" style="height: 20px;"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div> -->
-
-                <div class="row ">
-                    <div class="col-12 mt-4 ">
-                        <div class="row mt-1">
-                            <!-- inputs--------------------------- -->
-                            <div class="col-4">
-                                <div class="trim mt-1">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    Trim
-                                                </div>
-                                                <div class="col-3">
-                                                    <input type="text" class="form-control-sm-sm">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="col-6">
+                                    <label for="type">Actuator Type</label>
                                 </div>
+                                <div class="col-6">
+                                    <select class="manual gearbox actuator_select" name="type" id="type">
+                                        <option value="">Manual Gearbox</option>
+                                        <option value="">Spring & Diaphragam</option>
+                                        <option value="">Multi Spring 7 Diaphragam</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 pr-0">
+                                    <!-- Spring Action / Fail Mode -->
+                                    <label for="Spring Action">Spring Action / Fail Mode</label>
 
-                                <h5><b>Input</b></h5>
+                                </div>
+                                <div class="col-6">
+                                    <select class="Spring Action actuator_select" name="Spring Action"
+                                        id="Spring Action">
+                                        <option value="">N/A</option>
+                                        <option value="">Fail Open</option>
+                                        <option value="">Fail Close</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <!-- Hand Wheel -->
+                                    <label for="   Hand Wheel"> Hand Wheel</label>
+                                </div>
+                                <div class="col-6">
+                                    <select class="hand Wheel actuator_select" name="hand Wheel" id="hand Wheel">
+                                        <option value="">N/A</option>
+                                        <option value="">Side mounted</option>
+                                        <option value="">Top Mounted</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <!-- Orientation -->
+                                    <label for="Orientation">Orientation</label>
+                                </div>
+                                <div class="col-6">
+                                    <select class=" Orientation actuator_select" name="  Orientation "
+                                        id=" Orientation">
+                                        <option value="">N/A</option>
+                                        <option value="">Horizontal</option>
+                                        <option value="">Vertical</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <!-- Available Air Supply -->
+                                    <label for="Available">Air Supply Pressure</label>
+
+                                </div>
+                                <div class="col-3">
+                                    <input type="number" class="form-control-sm-sm actuator_input1">
+                                </div>
+                                <div class="col-3">
+                                    <select class="form-control-sm-sm actuator_select1" name="   Air Supply" id=" Air Supply">
+                                        <option value="">Psig</option>
+
+                                        <option value="">Psia</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <!-- Available Air Supply -->
+                                    <label for="Available">Set Pressure</label>
+
+                                </div>
+                                <div class="col-3">
+                                    <input type="number" class="form-control-sm-sm actuator_input1">
+                                </div>
+                                <div class="col-3">
+                                    <select class="actuator_select1 form-control-sm-sm" name="   Air Supply" id=" Air Supply">
+                                        <option value="">Psig</option>
+
+                                        <option value="">Psia</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <!-- Shut Off Pressure -->
+                                    <label for="Shut off">Shut Off Pressure</label>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" id="shut off" class="form-control-sm-sm actuator_input" name="shut off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="slidingstem.html"><button type="button" class="btn actuator_button1">Sliding Stem Actuator Sizing</button></a><br>
+                            <a href="RotaryActuatorSizing.html"><button type="button" class="btn  btn-info actuator_button2 mt-2">Rotary Actuator Sizing</button></a>
+                            <a href="#"><button type="button" class="btn actuator_button3 mt-2">Stroke Time Calculation</button></a>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-3">
+                                <label>Balancing</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="text" class="form-control-sm-sm slidingtop_input">
+                            </div>
+                        </div>
+                        <h6 class="sliding_heading"><b>Input</b></h6>
 
                                 <div class="row" style="margin-left: 1px;">
                                     <div class="col-6" style="border-bottom:  1px solid #607274;">
@@ -264,43 +310,42 @@
                                             <p class="sizingp">Unit</p>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="sliding_select">
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select"
+                                                >
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select"
+                                                >
                                                 <option>inch</option>
                                                 <option>inch²</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select"
+                                                >
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select"
+                                                >
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select"
+                                                >
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
@@ -310,53 +355,53 @@
                                         <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
                                         <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
                                         <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div> -->
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"
+                                                ></div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select"
+                                                >
                                                 <option>lbf</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select"
+                                                >
                                                 <option>psig</option>
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select"
+                                                >
                                                 <option>psig</option>
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select"
+                                                >
                                                 <option>psig</option>
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select"
+                                                >
                                                 <option>psig</option>
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select"
+                                                >
                                                 <option></option>
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select"
+                                               >
                                                 <option>psig</option>
                                                 <option>psig</option>
                                             </select>
@@ -367,66 +412,41 @@
                                         <div class="row sizingtableleft">
                                             <p class="sizingp">Values</p>
                                         </div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                    </div>
-                                   
-                            </div>
-                             <!------------------buttons---------------------->
-                                    <div class="button mt-5 ml-3">
-                                        <div class="row">
-                                            <button type="button" class="btn btn-info">Calculate</button>
-                                            <a href="Selectacuator(stem).html"><button type="button" class="btn ml-3" style="background-color: #04AA6D; color: white;">Select Actuator</button></a>
-                                        </div>
-                                        <div class="row mt-2">
-                                            <a href="Slidingstokespeed.html"><button type="button" class="btn btn-info">Storke Speed</button></a>
-                                            <button type="button" class="btn ml-3" style="background-color: #04AA6D; color: white;">Spec Sheet</button>
-                                        </div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
                                     </div>
                                 </div>
-                            <!-- <calculates ############################################### -->
-                            <div class="col-4" style="margin-left: 2%;">
-                                <div class="trim mt-1">
+                                <div class="button mt-3 ml-3">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    Balancing
-                                                </div>
-                                                <div class="col-3">
-                                                    <input type="text" class="form-control-sm-sm">
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <button type="button" class="btn btn-info input_btn1">Calculate</button>
+                                        <a href="Selectacuator(rotary).html"><button type="button" class="btn ml-3 input_btn2">Select Actuator</button></a>
                                     </div>
                                 </div>
-                                <h5 style="font-size: 20px;"><b>Calculated Results</b></h5>
+                    </div>
+
+
+                    <div class="col-4 ml-1">
+                        <div class="row">
+                            <div class="col-5 ml-1">
+                                <label>Flow Direction</label>
+                            </div>
+                            <div class="col-3">
+                                <input type="text" class="form-control-sm-sm slidingtop_input">
+                            </div>
+                        </div>
+                        <h5 class="sliding_heading ml-1"><b>Calculated Results</b></h5>
                                 <div class="row ml-1">
                                     <div class="col-6" style="border-bottom:  1px solid #607274;">
                                         <div class="row sizingtableleft">
@@ -505,117 +525,98 @@
                                             <p class="sizingp">Unit</p>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option></option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>bar</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option></option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N.m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N.m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N.m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>N.m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
+                                            <select id="" class="form-control-sm-sm sliding_select">
                                                 <option>psig</option>
                                             </select>
                                         </div>
@@ -644,46 +645,26 @@
                                         <div class="row sizingtableleft">
                                             <p class="sizingp">Values</p>
                                         </div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
                                         <div class="row sizingtable">
-                                            <input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;">
-                                        </div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
-                                                style="width: 100%;border: 0px solid;"></div>
+                                            <input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
                                         <!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
                                                 style="width: 100%;border: 0px solid;"></div> -->
                                         <!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
@@ -696,60 +677,17 @@
                                     
                                     
                                 </div>
-                                
-                               
-                                <!-- <div class="col-4" style="margin-left: 2%;">
-                                    <div class="trim mt-1">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="row">
-                                                    <div class="col-3">
-                                                        Trim
-                                                    </div>
-                                                    <div class="col-3">
-                                                        <input type="text" class="form-control-sm-sm">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
-                            </div> 
-                             <!-- <calculates ############################################### -->
-                               
-                            
-                         
-                            <div class="trim mt-1">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-">
-                                                Flow Direction
-                                            </div>
-                                            <div class="col-3">
-                                                <input type="text" class="form-control-sm-sm">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            
-                  
-                            
-                            
-                            
-                        </div>
 
-<!--                         
-                        <button type="button" class="btn btn-info">Calculate</button>
-                        <button type="button" class="btn" style="background-color: #04AA6D;">Select Actuator</button>
-                        <button type="button" class="btn btn-info">Storke Speed</button>
-                        <button type="button" class="btn" style="background-color: #04AA6D;">Spec Sheet</button> -->
+
                     </div>
-                    
+
                 </div>
-                
+
+                <div class="row justify-content-end mt-2">
+                    <div class="col-3">
+                        <button type="button" class="btn btn-info mt-1 savebtn">Save Next</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
