@@ -202,10 +202,14 @@ td {
 .projectdetail_input
 {
     width: 100%;
+    height: 26px;
+    font-size: 11px;
 }
 .projectdetail_select
 {
     width: 100%;
+    height: 26px;
+    font-size: 11px;
 }
 .projectdetail_btn
 {
@@ -222,13 +226,13 @@ td {
 }
 .valvedata_input
 {
-    width: 110%;
+    width: 100%;
     height: 26px;
     font-size: 11px;
 }
 .valvedata_select
 {
-    width: 110%;
+    width: 100%;
     height: 26px;
     background-color: white;
     border: 1px solid #333;
