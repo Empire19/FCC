@@ -15,32 +15,6 @@
     <!-- <link rel="stylesheet" href="css/table.css"> -->
     <script src="js/fcc.js"></script>
     <title>Actuator</title>
-    <style>
-        label {
-            font-size: 12px;
-        }
-
-        input {
-            height: 70%;
-            font-size: 12px;
-
-        }
-
-        select {
-            height: 70%;
-            font-size: 12px;
-            width: 100%;
-        }
-
-        h4 {
-            font-size: 20px;
-        }
-
-        .btn {
-            font-size: 14px;
-
-        }
-    </style>
 <!-- Extrenal css file  
 /* ACtuator Sizing */
 .actuator{
@@ -128,8 +102,8 @@
             <div class="col-10">
                 <div class="row">
                     <div class="col-12">
-                        <div class="topicons">
-                            <div class="row" style="margin-left: 3px;">
+                        <div class="topicons mt-2 ml-3">
+                            <div class="row">
                                 <div class="icon">
                                     <i class="fa-solid fa-backward-step" data-toggle="tooltip" title="first"></i>
                                     <i class="fa-solid fa-angle-left ml-3" data-toggle="tooltip" title="Previous"></i>
@@ -150,20 +124,20 @@
 
                         
                         <!-- <div class="container-fluid "> -->
-                            <div class="row" style="margin-top: 30px;">
+                            <div class="row mt-5">
                                 <div class="col-12">
                                     <div class="row">
                                         <!-- <div class="col-6"></div> -->
-                                        <div class="col-6">
-                                            <div class="actuator shadow" style="padding: 20px; width: 103%;">
-                                                <h4><b>Actuator Selection</b></h4>
+                                        <div class="col-3">
+                                            <div class="actuator shadow p-2">
+                                                <h6 class="actuator_heading"><b>Actuator Selection</b></h6>
                                                 <hr>
                                                 <div class="row">
-                                                    <div class="col-4">
-                                                        <label for="type">Type</label>
+                                                    <div class="col-6">
+                                                        <label for="type">Actuator Type</label>
                                                     </div>
-                                                    <div class="col-3">
-                                                        <select class="manual gearbox" name="type" id="type">
+                                                    <div class="col-6">
+                                                        <select class="manual gearbox actuator_select" name="type" id="type">
                                                             <option value="">Manual Gearbox</option>
                                                             <option value="">Spring & Diaphragam</option>
                                                             <option value="">Multi Spring 7 Diaphragam</option>
@@ -171,13 +145,13 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-4">
+                                                    <div class="col-6 pr-0">
                                                         <!-- Spring Action / Fail Mode -->
                                                         <label for="Spring Action">Spring Action / Fail Mode</label>
     
                                                     </div>
-                                                    <div class="col-3">
-                                                        <select class="Spring Action" name="Spring Action"
+                                                    <div class="col-6">
+                                                        <select class="Spring Action actuator_select" name="Spring Action"
                                                             id="Spring Action">
                                                             <option value="">N/A</option>
                                                             <option value="">Fail Open</option>
@@ -186,12 +160,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-4">
+                                                    <div class="col-6">
                                                         <!-- Hand Wheel -->
                                                         <label for="   Hand Wheel"> Hand Wheel</label>
                                                     </div>
-                                                    <div class="col-3">
-                                                        <select class="hand Wheel" name="hand Wheel" id="hand Wheel">
+                                                    <div class="col-6">
+                                                        <select class="hand Wheel actuator_select" name="hand Wheel" id="hand Wheel">
                                                             <option value="">N/A</option>
                                                             <option value="">Side mounted</option>
                                                             <option value="">Top Mounted</option>
@@ -199,12 +173,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-4">
+                                                    <div class="col-6">
                                                         <!-- Orientation -->
                                                         <label for="Orientation">Orientation</label>
                                                     </div>
-                                                    <div class="col-3">
-                                                        <select class=" Orientation" name="  Orientation "
+                                                    <div class="col-6">
+                                                        <select class=" Orientation actuator_select" name="  Orientation "
                                                             id=" Orientation">
                                                             <option value="">N/A</option>
                                                             <option value="">Horizontal</option>
@@ -213,59 +187,61 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-4">
+                                                    <div class="col-6">
                                                         <!-- Available Air Supply -->
-                                                        <label for="Available">Available Air Supply</label>
+                                                        <label for="Available">Air Supply Pressure</label>
     
                                                     </div>
                                                     <div class="col-3">
-                                                        <select class="" name="   Air Supply" id=" Air Supply">
+                                                        <input type="number" class="form-control-sm-sm actuator_input1">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <select class="form-control-sm-sm actuator_select1" name="   Air Supply" id=" Air Supply">
                                                             <option value="">Psig</option>
     
                                                             <option value="">Psia</option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-1">
-    
-                                                        <label for="Min">Min</label>
-    
-                                                    </div>
-                                                    <div class="col-1" style="margin-right: 2px;">
-                                                        <input type="number" style="width:300%;">
-    
-                                                    </div>
-                                                    <div class="col-1 ml-3">
-    
-                                                        <label for="max">Max</label>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <!-- Available Air Supply -->
+                                                        <label for="Available">Set Pressure</label>
     
                                                     </div>
-                                                    <div class="col-1">
-                                                        <input type="number" id="max" style="width: 300%;">
+                                                    <div class="col-3">
+                                                        <input type="number" class="form-control-sm-sm actuator_input1">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <select class="actuator_select1 form-control-sm-sm" name="   Air Supply" id=" Air Supply">
+                                                            <option value="">Psig</option>
     
+                                                            <option value="">Psia</option>
+                                                        </select>
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
-                                                    <div class="col-4">
+                                                    <div class="col-6">
                                                         <!-- Shut Off Pressure -->
                                                         <label for="Shut off">Shut Off Pressure</label>
                                                     </div>
-                                                    <div class="col-3">
-                                                        <input type="text" id="shut off" name="shut off" style="width: 100%;">
+                                                    <div class="col-6">
+                                                        <input type="text" id="shut off" class="form-control-sm-sm actuator_input" name="shut off">
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="mt-3">
+                                                <a href="slidingstem.html"><button type="button" class="btn actuator_button1">Sliding Stem Actuator Sizing</button></a><br>
+                                                <a href="RotaryActuatorSizing.html"><button type="button" class="btn  btn-info actuator_button2 mt-2">Rotary Actuator Sizing</button></a>
+                                                <a href="Slidingstokespeed.html"><button type="button" class="btn actuator_button3 mt-2">Stroke Time Calculation</button></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         <!-- </div> -->
-                        <div class="mt-3">
-                            <a href="slidingstem.html"><button type="button" class="btn "
-                                style="background-color: #04aa6d; color:white;">Sliding Stem Actuator
-                                Sizing</button></a>
-                            <a href="RotaryActuatorSizing.html"><button type="button" class="btn  btn-info" style="width:17%;">Rotary Actuator Sizing</button></a>
-                        </div>
-                   
                     </div>
                 </div>
             </div>
