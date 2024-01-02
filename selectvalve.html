@@ -21,27 +21,7 @@
 		<!-- <link rel="stylesheet" href="css/table.css"> -->
 		<script src="js/fcc.js"></script>
     <title>FCC</title>
-    <style>
-        label
-        {
-            font-size: 12px;
-        }
-        input
-        {
-            height: 100%;
-            font-size: 12px;
-        }
-        select
-        {
-            height: 100%;
-            font-size: 12px;
-            background-color: white;
-        }
-        /* div 
-        {
-            font-size: 12px;
-        } */
-    </style>
+ 
 </head>
 <body>
     <div class="container-fulid">
@@ -53,7 +33,7 @@
                         <!-- <li class="nav-item mt-4">
                             <p><a class="nav-link" href="#">Dashboard</a></p>
                         </li> -->
-                        <li  class="nav-item mt-4" style="margin-top: 0;">
+                        <li  class="nav-item mt-4" >
                             <p><a class="nav-link" href="Dash.html">
                                 <!-- <img src="icon/Dashboard.png" alt="dash" style="width: 15%;"> -->
                             Dashboard</a></p>
@@ -129,7 +109,9 @@
                                     <input type="text" class="form-control-sm-sm ml-3" name="name" style="height: 26px;"/>
                                     <i class="fa-solid fa-angle-right ml-3" data-toggle="tooltip" title="next"></i>
                                     <i class="fa-solid fa-forward-step ml-3" data-toggle="tooltip" title="last"></i>
-                                    <i class="fa-solid fa-folder-open ml-3" data-toggle="tooltip" title="file"></i>
+                                    <!-- <i class="fa-solid fa-folder-open ml-3" data-toggle="tooltip" title="file"></i> -->
+                                    <i class="fa-solid fa-file ml-3" data-toggle="tooltip" title="file"></i>
+
                                     <i class="fa-solid fa-floppy-disk ml-3 fa-lg" data-toggle="tooltip" title="save"></i>
                                     <a href="Preference.html"><i class="fa-solid fa-sliders fa-1x ml-3" data-toggle="tooltip" title="Preference"></i></a>
                                     <i class="fa-solid fa-question ml-3" data-toggle="tooltip" title="help"></i>
@@ -153,7 +135,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 ml-2">
                                         <div class="row">
                                             <select id="" class="form-control-sm-sm">
                                                 <option>Contoured</option>
@@ -165,7 +147,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-2 ml-4">
+                                    <div class="col-2 ml-2">
                                         <div class="row">
                                             <select id="" class="form-control-sm-sm">
                                                 <option>Equal %</option>
@@ -184,7 +166,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-2 ml-5">
+                                    <div class="col-2 ml-2">
                                         <div class="row">
                                             <select id="" class="form-control-sm-sm">
                                                 <option>150</option>
@@ -201,7 +183,7 @@
                             <div class="col-4">
                                 <div class="row">
                                     <div class="col-4">
-                                        <button type="button" class="btn btn-info">Get Valves</button>
+                                        <button type="button" class="btn btn-info valve_btn">Get Valves</button>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +191,7 @@
                     </div>
                 </div>
 
-                <div class="row mt-5 ml-3">
+                <div class="row mt-4 ml-3">
                     <div class="col-12">
                         <div class="row">
                             <div class="col-3" style="border-bottom:  1px solid #607274;">
@@ -336,7 +318,7 @@
                     </div>
                 </div>
                 <div class="btn">
-                    <button type="button" class="btn btn-info">Select Valve</button>
+                    <button type="button" class="btn btn-info valve_btn">Select Valve</button>
                 </div>
             </div>
         </div>

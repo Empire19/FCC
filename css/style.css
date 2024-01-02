@@ -12,10 +12,7 @@ img {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-label
-{
-    font-size: 11px;
-}
+
 /* ------------------------Valve Data------------------------------------------------------------------------------------------- */
 
 
@@ -321,21 +318,59 @@ td {
 }
 
 .clear {
-    margin-left: 5px;
+    margin-left: 20px;
     margin-top: 3px;
     text-align: right;
     color: rgb(95, 95, 95);
-    font-size: 15px;
+    font-size: 5px;
 }
 
 .closeicon {
-    margin-left: 5px;
-    margin-top: 3px;
+    margin-left: 20px;
+    margin-top: 1%;
     text-align: right;
     color: rgb(95, 95, 95);
 }
 
+.valvesizing_fluid_data{
+    width: 100%;
+}
 
+.valve_box2{
+    font-size: 12px;
+}
+
+
+
+label
+{
+    font-size: 11px;
+}
+
+input {
+    height: 100%;
+    font-size: 11px;
+}
+
+
+select {
+    height: 100%;
+    font-size: 11px;
+    background-color: white;
+    width: 100%;
+}
+
+.valve_btn{
+    font-size: 11px; 
+    font-family: Verdana sans-serif;
+    
+}
+.valve_btn2{
+    font-size: 11px; 
+    font-family: Verdana sans-serif;
+    background-color: #04AA6D;
+}
+/* -------------------------------------------------------------------------------------------------- */
 /* project details page css code */
 
 .projectdetails-form {
