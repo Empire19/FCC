@@ -12,10 +12,11 @@ img {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-label
-{
+
+label {
     font-size: 11px;
 }
+
 /* ------------------------Valve Data------------------------------------------------------------------------------------------- */
 
 
@@ -139,7 +140,7 @@ td {
 } */
 .topicons {
     /* margin-left: 25px; */
-    margin-top: 10px;
+    margin-top: 2%;
     width: 97%;
     height: 30px;
 }
@@ -186,6 +187,7 @@ td {
     /* background-color: #353a40; */
     color: white;
 }
+
 #btn {
     background-color: #353a40;
     outline: none;
@@ -195,100 +197,102 @@ td {
 
 /* ----------------------------------------------------project details page-------------------------------------------------------------- */
 
-.projectdetail_heading
-{
+.projectdetail_heading {
     font-size: 15px;
 }
-.projectdetail_input
-{
+
+.projectdetail_input {
     width: 100%;
     height: 70%;
     font-size: 11px;
 }
-.projectdetail_select
-{
+
+.projectdetail_select {
     width: 100%;
     height: 70%;
     font-size: 11px;
     background-color: white;
     border: 1px solid #607274;
 }
-.projectdetail_btn
-{
-    background-color: #04AA6D; 
+
+.projectdetail_btn {
+    background-color: #04AA6D;
     color: white;
     font-size: 11px;
 }
 
 /* ---------------------------------------------------------------valve data page-------------------------------------------------------- */
 
-.valvedata_heading
-{
+.valvedata_heading {
     font-size: 15px;
 }
-.valvedata_input
-{
+
+.valvedata_input {
     width: 100%;
     height: 70%;
     font-size: 11px;
 }
-.valvedata_select
-{
+
+.valvedata_select {
     width: 100%;
     height: 70%;
     background-color: white;
     border: 1px solid #607274;
     font-size: 11px;
 }
-.valvedata_input1
-{
+
+.valvedata_input1 {
     width: 120%;
     height: 70%;
     font-size: 11px;
 }
-.valvedata_select1
-{
+
+.valvedata_select1 {
     width: 120%;
     height: 70%;
     background-color: white;
     border: 1px solid #607274;
     font-size: 11px;
 }
-.valvedata_inputbox
-{
+
+.valvedata_inputbox {
     width: 150%;
     height: 70%;
 }
-.valvedata_selectbox
-{
+
+.valvedata_selectbox {
     width: 150%;
-    height: 69%;                                                                                                      
+    height: 69%;
     background-color: white;
     border: 1px solid #607274;
     font-size: 11px;
 }
-.valveselection
-{
+
+.valveselection {
     height: 100%;
 }
-.materialselection
-{
+
+.materialselection {
     height: 100%;
 }
-.warnings
-{
+
+.warnings {
     height: 240px;
 }
+
 .valvebutton {
     background-color: #04AA6D;
     font-size: 11px;
     color: white;
 }
+
 /* -------------------------------------valvesizing page------------------------------------------------------------------------ */
 .sizingtable {
     height: 25px;
     border-top: 1px solid #607274;
     border-right: 1px solid #607274;
+
+
     /* width: 100%; */
     /* border:1px solid #607274; */
 }
@@ -300,6 +304,23 @@ td {
     border-left: 1px solid #607274;
     background-color: #e5e5e5;
     /* border:1px solid #607274; */
+}
+
+.sizingtableleft_warning{
+    height: 25px;
+    border-top: 1px solid #607274;
+    border-right: white;
+    border-left: 1px solid #607274;
+    background-color: #ffffff;
+    /* border:1px solid #607274; */
+    
+}
+
+.sizingtable_header{
+    height: 25px;
+    border-top: 1px solid #607274;
+    border-right:white;
+
 }
 
 .sizingtablebottom {
@@ -320,33 +341,49 @@ td {
     font-size: 12px;
 }
 
+.colborder_bottom {
+    border-bottom: 1px solid #607274;
+
+}
+
+
+.sizingtable_inputs {
+    width: 100%;
+    border: 0px solid;
+}
+
 .clear {
-    margin-left: 20px;
-    margin-top: 3px;
+    margin-left: 5%;
+    margin-top: 10%;
     text-align: right;
-    color: rgb(95, 95, 95);
-    font-size: 5px;
+    color: rgb(28, 28, 28);
+    font-size: 12px;
+}
+
+.calculatedcv_row {
+    width: 100%;
+    border: 0px solid;
+    background-color: #ddebf7
 }
 
 .closeicon {
-    margin-left: 20px;
-    margin-top: 1%;
+    margin-left: 5%;
+    margin-top: 7%;
     text-align: right;
     color: rgb(95, 95, 95);
 }
 
-.valvesizing_fluid_data{
+.valvesizing_fluid_data {
     width: 100%;
 }
 
-.valve_box2{
+.valve_box2 {
     font-size: 12px;
 }
 
 
 
-label
-{
+label {
     font-size: 11px;
 }
 
@@ -363,42 +400,48 @@ select {
     width: 100%;
 }
 
-.valve_btn{
-    font-size: 11px; 
+.valve_btn {
+    font-size: 11px;
     font-family: Verdana sans-serif;
-    
+
 }
-.valve_btn2{
-    font-size: 11px; 
+
+.valve_btn2 {
+    font-size: 11px;
     font-family: Verdana sans-serif;
     background-color: #04AA6D;
+}
+
+/* --------------------------Select Valve------------------------ */
+.selectvalve_borderbottom{
+    border-bottom:  1px solid #607274;
+}
+
+.selectvalve_borderleft{
+    border-left: 1px solid #607274;
+
+}
+
+.outline{
+    border-left: groove 1px black; 
+    border-right: groove 1px black;
 }
 /* -------------------------------------------------------------------------------------------------- */
 /* project details page css code */
 
 .projectdetails-form {
-    /* background-color: white; */
+    background-color: white;
     padding: 15px;
     width: 95%;
-    /* -webkit-box-shadow: 2px 7px 15px 1px rgba(148, 183, 212, 1);
-    -moz-box-shadow: 2px 7px 15px 1px rgba(148, 183, 212, 1);
-    box-shadow: 2px 7px 15px 1px #cbd0d7; */
+
 }
 
 .orderinformation-form {
     margin-left: 3%;
     padding: 15px;
-    /* -webkit-box-shadow: 2px 7px 15px 1px rgba(148, 183, 212, 1);
-    -moz-box-shadow: 2px 7px 15px 1px rgba(148, 183, 212, 1);
-    box-shadow: 2px 7px 15px 1px #cbd0d7; */
+
 }
 
-
-
-/* .actuator
-{
-    margin-right: 30px;
-} */
 a:link {
     text-decoration: none;
 }
@@ -409,97 +452,96 @@ a:link {
 {
     width: 110%;
 } */
-.actuator_heading
-{
+.actuator_heading {
     font-size: 15px;
 }
-.actuator_input
-{
+
+.actuator_input {
     width: 100%;
     height: 70%;
     font-size: 11px;
 }
-.actuator_select
-{
+
+.actuator_select {
     width: 100%;
     height: 70%;
     font-size: 11px;
     background-color: white;
     border: 1px solid #607274;
 }
-.actuator_input1
-{
+
+.actuator_input1 {
     width: 130%;
     height: 70%;
     font-size: 11px;
 }
-.actuator_select1
-{
+
+.actuator_select1 {
     width: 100%;
     height: 70%;
     font-size: 11px;
     background-color: white;
     border: 1px solid #607274;
 }
-.actuator_button1
-{
-    background-color: #04aa6d; 
-    color:white;
+
+.actuator_button1 {
+    background-color: #04aa6d;
+    color: white;
     width: 100%;
     font-size: 14px;
 }
-.actuator_button2
-{
-    color:white;
+
+.actuator_button2 {
+    color: white;
     width: 100%;
     font-size: 14px;
 }
-.actuator_button3
-{
-    background-color: rgb(139, 43, 43); 
-    color:white;
+
+.actuator_button3 {
+    background-color: rgb(139, 43, 43);
+    color: white;
     width: 100%;
     font-size: 14px;
 }
 
 /* -----------------------------------------------RotaryActuator page css---------------------------------------------------------- */
 
-.Rotaryactuator_button1
-{
-    background-color: #04aa6d; 
-    color:white;
+.Rotaryactuator_button1 {
+    background-color: #04aa6d;
+    color: white;
     width: 100%;
     font-size: 14px;
 }
-.Rotaryactuator_button2
-{
-    color:white;
+
+.Rotaryactuator_button2 {
+    color: white;
     width: 100%;
     font-size: 14px;
 }
-.Rotaryactuator_button3
-{
-    background-color: rgb(139, 43, 43); 
-    color:white;
+
+.Rotaryactuator_button3 {
+    background-color: rgb(139, 43, 43);
+    color: white;
     width: 100%;
     font-size: 14px;
 }
-.Rotary_heading
-{
+
+.Rotary_heading {
     font-size: 15px;
 }
-.input_btn1
-{
+
+.input_btn1 {
     width: 150px;
     font-size: 14px;
 }
-.input_btn2
-{
+
+.input_btn2 {
     width: 150px;
-    background-color: #04AA6D; 
+    background-color: #04AA6D;
     color: white;
     font-size: 14px;
 }
+
 /* .input_btn3
 {
     width: 150px;
@@ -512,58 +554,70 @@ a:link {
     width: 150px;
     font-size: 14px;
 } */
-.Rotary_input
-{
+.Rotary_input {
     height: 100%;
     font-size: 12px;
     width: 100%;
     border: 0px solid;
 }
-.Rotary_select
-{
+
+.Rotary_select {
     height: 100%;
     font-size: 12px;
     width: 100%;
     background-color: white;
     border: 0px solid;
 }
-.savebtn
-{
+
+.savebtn {
     margin-left: 60%;
 }
 
 /* ----------------------------------slidingstem page css------------------------------------------------------------------------- */
-.sliding_heading
-{
+.sliding_heading {
     font-size: 15px;
     margin-top: 3%;
 }
-.sliding_select
-{
+
+.sliding_select {
     height: 100%;
     font-size: 12px;
     width: 100%;
     background-color: white;
     border: 0px solid;
 }
-.sliding_input
-{
+
+.sliding_input {
     height: 100%;
     font-size: 12px;
     width: 100%;
     border: 0px solid;
 }
-.slidingtop_input
-{
+
+.slidingtop_input {
     height: 90%;
     font-size: 11px;
 }
 
 
 /* ----------------------------------------------View Data CSS---------------------------------------------------------------------- */
-.viewbtn
-{
+.viewbtn {
     background-color: #dedbdb;
     color: #000000;
     font-size: 12px;
 }
+
+
+/* -----------------------------------------Accessories------------------------------------------ */
+
+.accessories_box{
+    height: 90%;
+}
+
+.acc_button {
+    background-color: #04AA6D;
+    font-size: 11px;
+    color: white;
+
+}
+
