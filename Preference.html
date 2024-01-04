@@ -1,3 +1,4 @@
+<!-- preference.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +23,7 @@
 		<script src="js/fcc.js"></script>
     <title>FCC</title>
     <style>
-        label
+        /* label
         {
             font-size: 12px;
         }
@@ -38,7 +39,7 @@
             background-color: white;
             border: 1px solid #333;
             padding-right: 20px;
-        }
+        } */
         /* div 
         {
             font-size: 12px;
@@ -55,7 +56,7 @@
                         <!-- <li class="nav-item mt-4">
                             <p><a class="nav-link" href="#">Dashboard</a></p>
                         </li> -->
-                        <li  class="nav-item mt-4" style="margin-top: 0;">
+                        <li  class="nav-item mt-4">
                             <p><a class="nav-link" href="Dash.html">
                                 <!-- <img src="icon/Dashboard.png" alt="dash" style="width: 15%;"> -->
                             Dashboard</a></p>
@@ -124,15 +125,15 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="topicons">
-                            <div class="row" style="margin-left: 3px;"> 
+                            <div class="row mt-2 ml-3"> 
                                 <div class="icon mt-2 ml-3">
                                     <i class="fa-solid fa-backward-step" data-toggle="tooltip" title="first"></i>
                                     <i class="fa-solid fa-angle-left ml-3" data-toggle="tooltip" title="Previous"></i>
                                     <input type="text" class="form-control-sm-sm ml-3" name="name" style="height: 26px;"/>
                                     <i class="fa-solid fa-angle-right ml-3" data-toggle="tooltip" title="next"></i>
                                     <i class="fa-solid fa-forward-step ml-3" data-toggle="tooltip" title="last"></i>
-                                    <i class="fa-solid fa-folder-open ml-3" data-toggle="tooltip" title="file"></i>
-                                    <i class="fa-solid fa-floppy-disk ml-3 fa-lg" data-toggle="tooltip" title="save"></i>
+                                    <i class="fa-solid fa-file ml-3" data-toggle="tooltip"
+                                    title="file"></i>                                    <i class="fa-solid fa-floppy-disk ml-3 fa-lg" data-toggle="tooltip" title="save"></i>
                                     <a href="Preference.html"><i class="fa-solid fa-sliders fa-1x ml-3" data-toggle="tooltip" title="Preference"></i></a>
                                     <i class="fa-solid fa-question ml-3" data-toggle="tooltip" title="help"></i>
                                 </div>
@@ -143,14 +144,14 @@
                 </div>
 
                 <div class="row mt-5 p-2 ml-1">
-                    <div class="col-3 shadow" style="padding: 20px;">
-                        <h4><b>Preferences</b></h4>
-                        <div class="row">
+                    <div class="col-4 p-3 shadow" >
+                        <h6><b>Preferences</b></h6>
+                        <div class="row mt-2">
                             <div class="col-6">
                                 <label>Pressure unit</label>
                             </div>
                             <div class="col-6">
-                                <select id="" class="form-control-sm-sm">
+                                <select id="" class="form-control-sm-sm actuator_select1">
                                     <option>bar(a)</option>
                                     <option>bar(g)</option>
                                     <option>kpa(a)</option>
@@ -175,12 +176,12 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="row mt-2">
                             <div class="col-6">
                                 <label>Flowrate unit</label>
                             </div>
                             <div class="col-6">
-                                <select id="" class="form-control-sm-sm">
+                                <select id="" class="form-control-sm-sm actuator_select1">
                                     <option>m3/hr</option>
                                     <option>scfh</option>
                                     <option>gpm</option>
@@ -190,12 +191,12 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="row mt-2">
                             <div class="col-6">
                                 <label>Length unit</label>
                             </div>
                             <div class="col-6">
-                                <select id="" class="form-control-sm-sm">
+                                <select id="" class="form-control-sm-sm actuator_select1">
                                     <option>inch</option>
                                     <option>mm</option>
                                     <option>cm</option>
@@ -204,12 +205,12 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="row mt-2">
                             <div class="col-6">
                                 <label>Temperature unit</label>
                             </div>
                             <div class="col-6">
-                                <select id="" class="form-control-sm-sm">
+                                <select id="" class="form-control-sm-sm actuator_select1">
                                     <option>°C</option>
                                     <option>°F</option>
                                     <option>K</option>
@@ -220,9 +221,9 @@
                     </div>
                 </div>
 
-                <div class="row mt-2 ml-2">
+                <div class="row mt-2 ml-3">
                     <div class="button">
-                        <button type="button" class="btn" style="background-color: #04AA6D; color: white;">Set Preference</button>
+                        <button type="button" class="btn valvebutton">Set Preference</button>
                     </div>
                 </div>
             </div>
