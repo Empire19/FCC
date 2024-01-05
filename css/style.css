@@ -43,6 +43,16 @@ label {
     color: black;
     /* border-radius: -20px; */
 }
+
+
+
+.nav-pills .nav-link.active {
+    background-color: white;
+    color: black;
+}
+
+
+
 .fa-circle-user {
     font-size: 25px
 }
@@ -533,6 +543,20 @@ a:link {
     font-size: 11px;
 }
 
+.balancing{
+    margin-left: 23%;
+}
+
+.flow{
+    margin-left: 15%
+
+}
+.flow_input{
+    margin-left: -29px;
+}
+
+
+
 /* ----------------------------------------------order and item notes page css----------------------------------------------------- */
 .Itemnotes_heading
 {
@@ -681,3 +705,61 @@ thead th
 
 }
 
+
+
+/* ----------------------------------------Accessories Positioner Table ----------------------*/
+.tablepositioner{
+    width: 100%;
+    /* overflow-y: scroll;
+    display: block;
+    height: 43%; */
+    font-size: 11px;
+
+}
+
+/* ratio column  */
+.table_ratio{
+    width: 1%;
+    font-size: 11px;
+    text-align: left;
+}
+
+/* manufactures,series,moc,enclosure,spool,type techno,action,haz columns */
+.table_manu
+{
+    width: 2%;
+    font-size: 11px;
+}
+
+/* comm,cert/model */
+.table_comm
+{
+    width: 4%;
+    font-size: 11px;
+}
+
+
+.positioner_button{
+    font-size: 11px;
+}
+/* ------------------------------------------------------------ */
+
+/* ----------------------------------------Accessories AFR Table ----------------------*/
+.table_afrmanu{
+    width: 3%;
+    font-size: 11px;
+
+}
+
+.table_afrmodel{
+    width: 15%;
+    font-size: 11px;
+
+}
+
+.table_afrfilter{
+    width: 12%;
+    font-size: 11px;
+
+
+}
