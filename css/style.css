@@ -48,6 +48,16 @@ label {
     color: black;
     /* border-radius: -20px; */
 }
+
+
+
+.nav-pills .nav-link.active {
+    background-color: white;
+    color: black;
+}
+
+
+
 .fa-circle-user {
     font-size: 25px
 }
@@ -538,6 +548,20 @@ a:link {
     font-size: 11px;
 }
 
+.balancing{
+    margin-left: 23%;
+}
+
+.flow{
+    margin-left: 15%
+
+}
+.flow_input{
+    margin-left: -29px;
+}
+
+
+
 /* ----------------------------------------------Accessories page css------------------------------------------------------------------ */
 
 .Accessories_heading {
@@ -784,3 +808,4 @@ a:link {
     color: white;
     margin-top: 3%;
 }
+
