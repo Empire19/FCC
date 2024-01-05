@@ -1,8 +1,13 @@
 /* ----------------------------------------------------------------------style.css file-------------------------------------------------------- */
+.nav-pills .nav-link.active
+{
+    background-color: white;
+    color: black;
+}
 img {
-    width: 90%;
-    margin-top: 6%;
-    margin-left: 4%;
+    width: 80%;
+    margin-top: 9%;
+    margin-left: 8%;
 }
 
 .adjust {
@@ -209,7 +214,7 @@ label {
 
 .valvebutton {
     background-color: #04AA6D;
-    font-size: 11px;
+    font-size: 14px;
     color: white;
 }
 
@@ -533,6 +538,99 @@ a:link {
     font-size: 11px;
 }
 
+/* ----------------------------------------------Accessories page css------------------------------------------------------------------ */
+
+.Accessories_heading {
+    font-size: 15px;
+}
+.arow_icon
+{
+    color: black;
+}
+.accesories_input
+{
+    width: 120%;
+    height: 70%;
+    font-size: 11px;
+}
+.accesories_select
+{
+    width: 120%;
+    height: 70%;
+    background-color: white;
+    border: 1px solid #607274;
+    font-size: 11px;
+}
+.accesories_btn
+{
+    margin-top: 13%;
+    margin-left: 88%;
+}
+
+/* -------------------------------------limit switch(accessories)------------------------------------------------------------- */
+
+.limitswitch_table
+{
+    font-size: 11px;
+}
+.accesories_radio
+{
+    margin-left: 30%;
+}
+.limitswitch_btn
+{
+    margin-left: 77%;
+    margin-top: 3%;
+    font-size: 14px;
+}
+
+/* ----------------------------------------------solenoid(accessories)------------------------------------------------------------ */
+
+.solenoid_table
+{
+    font-size: 11px;
+    /* overflow-y: scroll;
+    display: block; */
+}
+/* -----------------------------------------------afr(accessories)----------------------------------------------------------------- */
+
+.afr_table
+{
+    font-size: 11px;
+    width: 100%;
+    /* overflow-y: scroll;
+    display: block; */
+}
+.afr_btn
+{
+    margin-left: 84%;
+    margin-top: 3%;
+    font-size: 14px;
+}
+
+/* -----------------------------------------------positioner(accessories)---------------------------------------------------------- */
+
+.positioner_table
+{
+    width: 100%;
+    font-size: 11px;
+    /* overflow-y: scroll;
+    display: block; */
+}
+.positioner_btn
+{
+    /* margin-top: 4%; */
+    margin-left: 77%;
+    margin-top: 3%;
+    font-size: 14px;
+}
+.back-btn
+{
+    background-color: #04AA6D;
+    color: white;
+    margin-top: 3%;
+    font-size: 14px;
+}
 /* ----------------------------------------------order and item notes page css----------------------------------------------------- */
 .Itemnotes_heading
 {
@@ -576,7 +674,7 @@ a:link {
     display: block;
     height: 43%;
 }
-thead th
+.itemhead th
 {
     position: sticky;
     top: 0;
@@ -667,17 +765,22 @@ thead th
     display: block;
     height: 500px;
 }
+/* -----------------------------------preference page css------------------------------------------------------------------------- */
 
-/* -----------------------------------------Accessories------------------------------------------ */
-
-.accessories_box{
-    height: 90%;
+.preference_heading
+{
+    font-size: 15px;
 }
-
-.acc_button {
+.preference_select
+{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border: 1px solid #607274;
+}
+.preference_btn
+{
     background-color: #04AA6D;
-    font-size: 11px;
     color: white;
-
+    margin-top: 3%;
 }
-

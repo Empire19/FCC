@@ -22,29 +22,6 @@
 		<!-- <link rel="stylesheet" href="css/table.css"> -->
 		<script src="js/fcc.js"></script>
     <title>FCC</title>
-    <style>
-        /* label
-        {
-            font-size: 12px;
-        }
-        input
-        {
-            height: 100%;
-            font-size: 12px;
-        }
-        select
-        {
-            width: 100%;
-            font-size: 12px;
-            background-color: white;
-            border: 1px solid #333;
-            padding-right: 20px;
-        } */
-        /* div 
-        {
-            font-size: 12px;
-        } */
-    </style>
 </head>
 <body>
     <div class="container-fulid">
@@ -146,15 +123,16 @@
                     </div>
                 </div>
 
-                <div class="row mt-5 p-2 ml-1">
-                    <div class="col-4 p-3 shadow" >
-                        <h6><b>Preferences</b></h6>
+                <div class="row mt-2">
+                    <div class="col-3 shadow p-2" >
+                        <h6 class="preference_heading"><b>Preferences</b></h6>
+                        <hr>
                         <div class="row mt-2">
                             <div class="col-6">
                                 <label>Pressure unit</label>
                             </div>
                             <div class="col-6">
-                                <select id="" class="form-control-sm-sm actuator_select1">
+                                <select id="" class="form-control-sm-sm preference_select">
                                     <option>bar(a)</option>
                                     <option>bar(g)</option>
                                     <option>kpa(a)</option>
@@ -184,7 +162,7 @@
                                 <label>Flowrate unit</label>
                             </div>
                             <div class="col-6">
-                                <select id="" class="form-control-sm-sm actuator_select1">
+                                <select id="" class="form-control-sm-sm preference_select">
                                     <option>m3/hr</option>
                                     <option>scfh</option>
                                     <option>gpm</option>
@@ -199,7 +177,7 @@
                                 <label>Length unit</label>
                             </div>
                             <div class="col-6">
-                                <select id="" class="form-control-sm-sm actuator_select1">
+                                <select id="" class="form-control-sm-sm preference_select">
                                     <option>inch</option>
                                     <option>mm</option>
                                     <option>cm</option>
@@ -213,7 +191,7 @@
                                 <label>Temperature unit</label>
                             </div>
                             <div class="col-6">
-                                <select id="" class="form-control-sm-sm actuator_select1">
+                                <select id="" class="form-control-sm-sm preference_select">
                                     <option>°C</option>
                                     <option>°F</option>
                                     <option>K</option>
@@ -224,10 +202,8 @@
                     </div>
                 </div>
 
-                <div class="row mt-2 ml-3">
-                    <div class="button">
-                        <button type="button" class="btn valvebutton">Set Preference</button>
-                    </div>
+                <div class="row">
+                    <button type="button" class="btn preference_btn">Set Preference</button>
                 </div>
             </div>
         </div>
