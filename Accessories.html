@@ -16,57 +16,6 @@
     <!-- <link rel="stylesheet" href="css/table.css"> -->
     <script src="js/fcc.js"></script>
     <title>Actuator</title>
-    <style>
-        label {
-            font-size: 12px;
-        }
-
-        input {
-            height: 70%;
-            font-size: 11px;
-
-        }
-
-        select {
-            height: 70%;
-            font-size: 12px;
-            width: 100%;
-        }
-
-        h4 {
-            font-size: 20px;
-        }
-
-        .btn {
-            font-size: 14px;
-            margin-left: 160%;
-            margin-top: 30%;
-            width: 30%;
-
-        }
-
-        /* accesories page------------------ table icons */
-        .tableicons {
-            width: 170%;
-        }
-
-        .tableicons2 {
-            width: 140%;
-        }
-
-        .acess_icons {
-            color: black;
-        }
-
-        /* Custom styles to reduce tooltip size */
-        .tooltip-inner {
-            font-size: 12px;
-            /* Adjust the font size as needed */
-            max-width: 100px;
-            /* Set a maximum width if necessary */
-            /* delay: { "show": 500, "hide": 100 } */
-        }
-    </style>
     <!-- Extrenal css file  
 /* ACtuator Sizing */
 .actuator{
@@ -82,7 +31,7 @@
             <div class="col-2">
                 <div class="sidenav">
                     <img src="photo/FCC _new.png"  alt="fcc">
-                    <ul class="nav  nav-pills flex-column vh-100">
+                    <ul class="nav flex-column vh-100">
                         <!-- <li class="nav-item mt-4">
                             <p><a class="nav-link" href="#">Dashboard</a></p>
                         </li> -->
@@ -114,7 +63,7 @@
                                 Actuator Sizing</a></p>
                         </li>
                         <li class="nav-item">
-                            <p><a class="nav-link active" data-toggle="pill" href="Accessories.html">
+                            <p><a class="nav-link" href="Accessories.html">
                                 <!-- <img src="photo/Accessories.png" alt="valve" style="width: 10%; border-radius: 10px;">  -->
                                 Accessories</a></p>
                         </li>
@@ -174,85 +123,73 @@
                         </div>
                         <hr>
 
-                        <div class="row mt-5 ml-2">
+                        <div class="row">
                             <div class="col-12">
                                 <!-- <div class="row"> -->
-                                    <div class="col-6 shadow mt-1 p-1 accessories_box">
-                                        <h5 class="ml-2"><b>Accessories</b></h5>
+                                    <div class="col-7 shadow mt-2 p-2">
+                                        <h5 class="Accessories_heading"><b>Accessories</b></h5>
                                         <hr>
                                         <div class="row">
-                                            <div class="col-5 ml-2">
+                                            <div class="col-6">
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Positioner Mfg</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <select id="" class="tableicons form-control-sm-sm">
+                                                        <select id="" class="tableicons form-control-sm-sm accesories_select">
                                                             <option>Tissin</option>
                                                             <option>Neles</option>
                                                             <option>Fisher</option>
                                                         </select>
-
                                                     </div>
-                                                    <div class="col-2 ">
-                                                        <!-- <button type="button" class=" btn-outline-danger btn-xs" style="border-radius: 50%;">Po</button> -->
-                                                        <!-- <i class="fa-solid fa-share"></i> -->
-                                                        <!-- <i class="fa-solid fa-arrow-down fa-rotate-270"></i> -->
-                                                        <!-- <i class="fa-solid fa-turn-down fa-rotate-270"></i> -->
+                                                    <div class="col-2">
                                                         <a href="Positioner(accessories).html">
-                                                            <i class="acess_icons fa-regular fa-circle-right ml-4"
+                                                            <i class="acess_icons fa-regular fa-circle-right arow_icon"
                                                                 data-toggle="tooltip" data-placement="top"
                                                                 title="Positioner"></i>
                                                         </a>
                                                     </div>
-
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Positioner Model</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <select id="" class=" tableicons form-control-sm-sm">
+                                                        <select id="" class=" tableicons form-control-sm-sm accesories_select">
                                                             <option>TS700R</option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-2">
-                                                        <!-- <button type="button" class="btn-danger btn-xs" style="border-radius: 50%;">po</button> -->
-                                                    </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Signal Action</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <select id="" class="tableicons form-control-sm-sm">
+                                                        <select id="" class="tableicons form-control-sm-sm accesories_select">
                                                             <option>Double</option>
                                                             <option>Single</option>
                                                             <option>Reverse</option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-2">
-                                                        <!-- <button type="button" class="btn-outline-danger btn-xs">Po</button> -->
-                                                    </div>
-
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>AFR Make/Model</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <select id="" class="tableicons form-control-sm-sm">
+                                                        <select id="" class="tableicons form-control-sm-sm accesories_select">
                                                             <option>SHAVO/11-4</option>
                                                         </select>
                                                     </div>
                                                     <div class="col-2">
                                                         <a href="Afr(accessories).html">
-                                                            <i class=" acess_icons  fa-regular fa-circle-right ml-4"
+                                                            <i class=" acess_icons  fa-regular fa-circle-right arow_icon"
                                                                 data-toggle="tooltip" data-placement="top"
                                                                 title="AFR"></i>
-
                                                         </a>
-
                                                     </div>
                                                 </div>
 
@@ -261,224 +198,184 @@
                                                         <label>Position Transmitter</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <input type="text" class="tableicons form-control-sm-sm">
-                                                    </div>
-                                                    <div class="col-2">
-                                                        <!-- <button type="button" class=" btn-danger btn-xs" style="border-radius: 8px;">Po</button> -->
+                                                        <input type="text" class="tableicons form-control-sm-sm accesories_input">
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6">
                                                         <label>Limit Switch</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <select id="" class=" tableicons form-control-sm-sm">
+                                                        <select id="" class=" tableicons form-control-sm-sm accesories_select">
                                                             <option>TVL-E20GLMM</option>
                                                         </select>
                                                     </div>
                                                     <div class="col-2">
                                                         <a href="limitswitch(accessories).html">
-                                                            <i class=" acess_icons fa-regular fa-circle-right ml-4"
+                                                            <i class=" acess_icons fa-regular fa-circle-right arow_icon"
                                                                 data-toggle="tooltip" data-placement="top"
                                                                 title="Limit Switch"></i>
-
                                                         </a>
-
                                                     </div>
-
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Proximity Switch</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <input type="text" class=" tableicons form-control-sm-sm">
-                                                    </div>
-                                                    <div class="col-2">
-
+                                                        <input type="text" class=" tableicons form-control-sm-sm accesories_input">
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Boosters</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <select id="" class=" tableicons form-control-sm-sm">
+                                                        <select id="" class=" tableicons form-control-sm-sm accesories_select">
                                                             <option>I-BP1A</option>
                                                             <option>W20359</option>
                                                         </select>
                                                     </div>
                                                     <div class="col-2">
-                                                        <i class=" acess_icons fa-regular fa-circle-right ml-4"
+                                                        <i class=" acess_icons fa-regular fa-circle-right arow_icon"
                                                             data-toggle="tooltip" data-placement="top"
                                                             title="Boosters"></i>
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Pilot Valves</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <input type="text" class="tableicons form-control-sm-sm">
-                                                    </div>
-                                                    <div class="col2">
-
+                                                        <input type="text" class="tableicons form-control-sm-sm accesories_input">
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Air Lock Relay</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <input type="text" class="tableicons form-control-sm-sm">
-                                                    </div>
-                                                    <div class="col-2">
-
+                                                        <input type="text" class="tableicons form-control-sm-sm accesories_input">
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="col-6 ml-4"> <!--Width 80%ttttttttttttttttttt-->
+                                            <div class="col-6">
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>I/P Converter Make</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <input type="text" class="tableicons2 form-control-sm-sm">
-                                                    </div>
-                                                    <div class="col-2">
-
+                                                        <input type="text" class="tableicons2 form-control-sm-sm accesories_input">
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>I/P Converter Model</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <input type="text" class="tableicons2 form-control-sm-sm">
-                                                    </div>
-                                                    <div class="col-2">
-
+                                                        <input type="text" class="tableicons2 form-control-sm-sm accesories_input">
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Solenoid Valve Make</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <select id="" class=" tableicons2 form-control-sm-sm">
+                                                        <select id="" class=" tableicons2 form-control-sm-sm accesories_select">
                                                             <option>ASCO</option>
                                                             <option>Rotex</option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-2">
-
-                                                    </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Solenoid Valve Model</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <select id="" class="tableicons2 form-control-sm-sm">
+                                                        <select id="" class="tableicons2 form-control-sm-sm accesories_select">
                                                             <option></option>
                                                         </select>
                                                     </div>
                                                     <div class="col-2">
                                                         <a href="Solenoid(accessories).html">
-                                                            <i class=" acess_icons fa-regular fa-circle-right ml-2 "
+                                                            <i class=" acess_icons fa-regular fa-circle-right arow_icon"
                                                                 data-toggle="tooltip" data-placement="top"
                                                                 title="Solenoid Table"></i>
-
                                                         </a>
-
                                                     </div>
-
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Solenoid Action</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <select id="" class="tableicons2 form-control-sm-sm">
+                                                        <select id="" class="tableicons2 form-control-sm-sm accesories_select">
                                                             <option></option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-2">
-
-                                                    </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Volume Tank</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <input type="text" class="tableicons2 form-control-sm-sm">
-                                                    </div>
-                                                    <div class="col-2">
-
+                                                        <input type="text" class="tableicons2 form-control-sm-sm accesories_input">
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>IP Converter</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <input type="text" class="tableicons2 form-control-sm-sm">
-                                                    </div>
-                                                    <div class="col-2">
-
+                                                        <input type="text" class="tableicons2 form-control-sm-sm accesories_input">
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Air Receiver</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <input type="text" class="tableicons2 form-control-sm-sm">
-                                                    </div>
-                                                    <div class="col-2">
-
+                                                        <input type="text" class="tableicons2 form-control-sm-sm accesories_input">
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Tubing</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <input type="text" class="tableicons2 form-control-sm-sm">
-                                                    </div>
-                                                    <div class="col-2">
-
+                                                        <input type="text" class="tableicons2 form-control-sm-sm accesories_input">
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col-6 pr-0">
                                                         <label>Fittings</label>
                                                     </div>
                                                     <div class="col-4">
-                                                        <input type="text" class="tableicons2 form-control-sm-sm">
-                                                    </div>
-                                                    <div class="col-2">
-
+                                                        <input type="text" class="tableicons2 form-control-sm-sm accesories_input">
                                                     </div>
                                                 </div>
+
                                             </div>
                                         </div>
-                                        <!-- <div class="btn mt-4">
-                                            <div class="row">
-                                                <button type="button" class="btn btn-info">Positioner</button>
-                                                <button type="button" class="btn ml-3"
-                                                    style="background-color: #04AA6D; color: white;">AFR</button>
-                                            </div>
-                                            <div class="row mt-2">
-                                                <button type="button" class="btn btn-info">Limit Switch</button>
-                                                <button type="button" class="btn ml-3"
-                                                    style="background-color: #04AA6D; color: white;">Solenoid</button>
-                                            </div>
-                                        </div> -->
-                                        <button type="button" class="btn acc_button mt-2" >Save Data</button>
+                                    </div>
 
+                                    <div class="row">
+                                        <button type="button" class="btn btn-info accesories_btn">Save Data</button>
                                     </div>
 
                                 <!-- </div> -->
